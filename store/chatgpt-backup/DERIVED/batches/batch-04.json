@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-04",
+  "conversation_ids": [
+    "6ab70dbe-1d18-83e8-836c-132276fb814a",
+    "6ab45264-7fc0-83e8-af90-f8491c61c40b",
+    "6a22bc0d-4760-83e8-be40-76768bf72a77",
+    "6ab72992-4c1c-83e8-a62c-14150d0c62e0",
+    "6aa70a4a-7374-83e8-86cf-96dffacb235a"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab70dbe-1d18-83e8-836c-132276fb814a",
+      "title": "GCE_Taxonomy_V3",
+      "turns": 614,
+      "date": 1790381503.257906,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab70dbe-1d18-83e8-836c-132276fb814a.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab70dbe-1d18-83e8-836c-132276fb814a.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab45264-7fc0-83e8-af90-f8491c61c40b",
+      "title": "Ground State Summary",
+      "turns": 503,
+      "date": 1790202470.141754,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab45264-7fc0-83e8-af90-f8491c61c40b.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45264-7fc0-83e8-af90-f8491c61c40b.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6a22bc0d-4760-83e8-be40-76768bf72a77",
+      "title": "Hatching Beach Concept",
+      "turns": 14,
+      "date": 1780661266.205584,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6a22bc0d-4760-83e8-be40-76768bf72a77.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6a22bc0d-4760-83e8-be40-76768bf72a77.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab72992-4c1c-83e8-a62c-14150d0c62e0",
+      "title": "Increase Headphone Volume",
+      "turns": 35,
+      "date": 1790388627.143408,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab72992-4c1c-83e8-a62c-14150d0c62e0.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab72992-4c1c-83e8-a62c-14150d0c62e0.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aa70a4a-7374-83e8-86cf-96dffacb235a",
+      "title": "Laptop Wire Situation Knowledge",
+      "turns": 535,
+      "date": 1789332060.246973,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aa70a4a-7374-83e8-86cf-96dffacb235a.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa70a4a-7374-83e8-86cf-96dffacb235a.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

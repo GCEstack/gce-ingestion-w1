@@ -1,0 +1,2 @@
+[console_scripts]
+gce-chatgpt-backup = gce_ingestion.cli.chatgpt_backup:main

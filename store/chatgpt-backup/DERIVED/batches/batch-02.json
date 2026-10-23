@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-02",
+  "conversation_ids": [
+    "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+    "6ab189d7-a29c-83e8-b616-34665f1f9279",
+    "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+    "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+    "6aa84361-d1f0-83e8-a377-afa79a05694e"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+      "title": "EC8 AI Convergence",
+      "turns": 37,
+      "date": 1790218783.389707,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab4921d-6620-83e8-b776-4ed0f0eee1d5.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4921d-6620-83e8-b776-4ed0f0eee1d5.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab189d7-a29c-83e8-b616-34665f1f9279",
+      "title": "Edge Crew Data Architecture",
+      "turns": 252,
+      "date": 1790020056.313462,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab189d7-a29c-83e8-b616-34665f1f9279.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab189d7-a29c-83e8-b616-34665f1f9279.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+      "title": "Excalibur ledger handoff",
+      "turns": 1099,
+      "date": 1789594675.766611,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aab0c32-f748-83e8-beb2-d6cdeca659e9.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aab0c32-f748-83e8-beb2-d6cdeca659e9.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+      "title": "Fantasy Football Ingest",
+      "turns": 10,
+      "date": 1790284242.178164,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab591d1-5f44-83e8-af63-3f4f9d9722c8.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab591d1-5f44-83e8-af63-3f4f9d9722c8.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aa84361-d1f0-83e8-a377-afa79a05694e",
+      "title": "Framework Checkpoint Loaded",
+      "turns": 783,
+      "date": 1789412194.329629,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aa84361-d1f0-83e8-a377-afa79a05694e.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa84361-d1f0-83e8-a377-afa79a05694e.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

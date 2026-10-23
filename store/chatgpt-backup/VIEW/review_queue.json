@@ -1,0 +1,522 @@
+{
+  "schema": "gce.chatgpt.review_queue.v1",
+  "generated_at": "2026-09-26T09:41:46Z",
+  "scope": "captured conversations needing human judgement; uncaptured backlog is tracked separately in CONTROL/capture_queue.json",
+  "counts": {
+    "total": 31,
+    "captured_conversations": 33,
+    "not_captured_excluded": 504,
+    "by_reason": {
+      "capture": 23,
+      "flagged": 20,
+      "lifecycle_state": 20,
+      "conflicting": 19,
+      "project": 8,
+      "worker": 7
+    },
+    "control_review_items_pending": 76,
+    "worker_reported_contradictions": 46
+  },
+  "items": [
+    {
+      "conversation_id": "6ab45849-8430-83e8-bfce-3696208c5e67",
+      "title": "Amazon Bedrock Utilization Chat",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\3d\\3d82f867138eca12d916782e4792194af55f60fb0143fd89f448dcf502cb8aa9",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45849-8430-83e8-bfce-3696208c5e67.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab45849-8430-83e8-bfce-3696208c5e67.md"
+    },
+    {
+      "conversation_id": "6aa32d59-d38c-83e8-9081-d91f4210022c",
+      "title": "Cancel Albert",
+      "reasons": [
+        "lifecycle_state unknown",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "Finance",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\66\\66edd49899655507b6302fca737d4c0780d91fab1b0db6e40c89288b44ddf5cc",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa32d59-d38c-83e8-9081-d91f4210022c.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aa32d59-d38c-83e8-9081-d91f4210022c.md"
+    },
+    {
+      "conversation_id": "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+      "title": "Compare Florida Flights",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\5b\\5b6aef3a86bbe7ad6d8fdbbd9e5b532cc71939d28a585a6f241e7c7beba4ccd8",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab6d270-f25c-83e8-add8-9d4650bddb9b.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab6d270-f25c-83e8-add8-9d4650bddb9b.md"
+    },
+    {
+      "conversation_id": "6ab61052-2db0-83e8-8c47-53f954b8d2a5",
+      "title": "Cross session reconciliation",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\f5\\f553b1eccfea18997a9db6cc476a2b9dad2a936e97cbe48ca1f97c41e228eda7",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab61052-2db0-83e8-8c47-53f954b8d2a5.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab61052-2db0-83e8-8c47-53f954b8d2a5.md"
+    },
+    {
+      "conversation_id": "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+      "title": "EC8 AI Convergence",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "worker routed to human review",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "EC8",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\7c\\7c0504842d8d9a250de1b4d45149c53a9e245054b96347f854a6825638e02540",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4921d-6620-83e8-b776-4ed0f0eee1d5.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab4921d-6620-83e8-b776-4ed0f0eee1d5.md"
+    },
+    {
+      "conversation_id": "6ab189d7-a29c-83e8-b616-34665f1f9279",
+      "title": "Edge Crew Data Architecture",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "EC8",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\f3\\f320a489f61c0e4e6fea9f87ec5293e1886f86ae86bcaab27e8845204d41430d",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab189d7-a29c-83e8-b616-34665f1f9279.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab189d7-a29c-83e8-b616-34665f1f9279.md"
+    },
+    {
+      "conversation_id": "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+      "title": "Excalibur ledger handoff",
+      "reasons": [
+        "project classification uncertain",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\7e\\7ef0347f22861843ad15be0d8b7789a408a3fcd7daf8e131baad0da1c42e29d2",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aab0c32-f748-83e8-beb2-d6cdeca659e9.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aab0c32-f748-83e8-beb2-d6cdeca659e9.md"
+    },
+    {
+      "conversation_id": "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+      "title": "Fantasy Football Ingest",
+      "reasons": [
+        "lifecycle_state unknown",
+        "worker routed to human review"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "Fantasy Sports",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\94\\94f2fe14d181808b68930a21c11ef2ff34dfe4cfd71226d26fcd251cf8e5827a",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab591d1-5f44-83e8-af63-3f4f9d9722c8.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab591d1-5f44-83e8-af63-3f4f9d9722c8.md"
+    },
+    {
+      "conversation_id": "6aa84361-d1f0-83e8-a377-afa79a05694e",
+      "title": "Framework Checkpoint Loaded",
+      "reasons": [
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\18\\18ef13c98e36980bc5a18abe8b5cf9536c95945ffd9b1bbe718904e9604acc23",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa84361-d1f0-83e8-a377-afa79a05694e.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aa84361-d1f0-83e8-a377-afa79a05694e.md"
+    },
+    {
+      "conversation_id": "6ab609dd-25d0-83e8-b9f4-bd5552213d90",
+      "title": "Framework Postmortem Review",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain",
+        "flagged framework_candidate -- not promoted, needs human ruling"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\c9\\c9468395edcf6419b1299f4aa0ae7c4a5e542e30076b42a90443f9684dc3d1c7",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab609dd-25d0-83e8-b9f4-bd5552213d90.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab609dd-25d0-83e8-b9f4-bd5552213d90.md"
+    },
+    {
+      "conversation_id": "6aac5879-875c-83e8-9c88-d378c37d6910",
+      "title": "GCE Cleanup Handoff - Old Version Prior 9.21",
+      "reasons": [
+        "project classification uncertain",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\e9\\e90f6661dcd1ee4afcc96e17a8ea0451f2341ea34e7f3e7b0424db4fbc26fecf",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aac5879-875c-83e8-9c88-d378c37d6910.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aac5879-875c-83e8-9c88-d378c37d6910.md"
+    },
+    {
+      "conversation_id": "6aac9fb9-f1bc-83e8-86c1-956402c68d64",
+      "title": "GCE Development Design Brainstorm",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "worker routed to human review",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\b7\\b77748cae751e52b8899099f35bb130b295886c2e7ec06b95f884acd37b36703",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aac9fb9-f1bc-83e8-86c1-956402c68d64.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aac9fb9-f1bc-83e8-86c1-956402c68d64.md"
+    },
+    {
+      "conversation_id": "6ab536a9-0ad8-83e8-8427-23ae267cfe72",
+      "title": "GCE_Cable_Car_GD",
+      "reasons": [
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "Cable Car",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\da\\da22899eb69697d19667202da63b198aa3827b5bc57a975c6b50cc173936246d",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab536a9-0ad8-83e8-8427-23ae267cfe72.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab536a9-0ad8-83e8-8427-23ae267cfe72.md"
+    },
+    {
+      "conversation_id": "6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe",
+      "title": "GCE_Kimi_Scraper",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Stack",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\3b\\3b572512b3efbd1c9d9f163683171f85bfb9e5825a63c64b246314a260f236ce",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe.md"
+    },
+    {
+      "conversation_id": "6ab70dbe-1d18-83e8-836c-132276fb814a",
+      "title": "GCE_Taxonomy_V3",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\af\\afe4c617818e375faa87944612d26ae502dc985d191338be0a61400f0df3178a",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab70dbe-1d18-83e8-836c-132276fb814a.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab70dbe-1d18-83e8-836c-132276fb814a.md"
+    },
+    {
+      "conversation_id": "6ab45264-7fc0-83e8-af90-f8491c61c40b",
+      "title": "Ground State Summary",
+      "reasons": [
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "DevPad",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\8c\\8c64f1148ddbb1d3bb51d3b0e61138afa0cfe2cf9a3a7d65423bf136ee8fa7b9",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45264-7fc0-83e8-af90-f8491c61c40b.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab45264-7fc0-83e8-af90-f8491c61c40b.md"
+    },
+    {
+      "conversation_id": "6a22bc0d-4760-83e8-be40-76768bf72a77",
+      "title": "Hatching Beach Concept",
+      "reasons": [
+        "lifecycle_state unknown",
+        "worker routed to human review",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "Other",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\5b\\5bee6aa574dada1f0309fb4a719ee36eee45f295cc913c4a1395fcf32a53c3ae",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6a22bc0d-4760-83e8-be40-76768bf72a77.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6a22bc0d-4760-83e8-be40-76768bf72a77.md"
+    },
+    {
+      "conversation_id": "6ab72992-4c1c-83e8-a62c-14150d0c62e0",
+      "title": "Increase Headphone Volume",
+      "reasons": [
+        "capture warnings: non_text_part:audio_transcription"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "Personal Admin",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\f3\\f3fe0e85b2257388ee94fc7353eb21cfb1f53d22d16e2561375bffe4cb898194",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab72992-4c1c-83e8-a62c-14150d0c62e0.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab72992-4c1c-83e8-a62c-14150d0c62e0.md"
+    },
+    {
+      "conversation_id": "6aa70a4a-7374-83e8-86cf-96dffacb235a",
+      "title": "Laptop Wire Situation Knowledge",
+      "reasons": [
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "Personal Admin",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\4f\\4f0f1b003e7cb9df3caaf697d09f8af41c291ccf855ac87bd74702b587d2590d",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa70a4a-7374-83e8-86cf-96dffacb235a.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aa70a4a-7374-83e8-86cf-96dffacb235a.md"
+    },
+    {
+      "conversation_id": "6aa77efb-4818-83e8-b885-8dc57bd6eb02",
+      "title": "MHI Prep - Conversation - Luxor 9.14",
+      "reasons": [
+        "lifecycle_state unknown",
+        "worker routed to human review",
+        "capture warnings: non_text_part:audio_transcription"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "Employment",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\51\\51b1a6c289e3c50828c25b3778520ee327796ac1c9242551bd74359f8a27646b",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa77efb-4818-83e8-b885-8dc57bd6eb02.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aa77efb-4818-83e8-b885-8dc57bd6eb02.md"
+    },
+    {
+      "conversation_id": "6ab4753b-e7d4-83e8-aa71-129662cb5015",
+      "title": "MLB Cleanup Assessment",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\7b\\7bdedd4c88a1fe984a2cf56fca44c12258b07c5894ea4b7307bd48a03add269e",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4753b-e7d4-83e8-aa71-129662cb5015.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab4753b-e7d4-83e8-aa71-129662cb5015.md"
+    },
+    {
+      "conversation_id": "6aa3dc63-830c-83e8-b3fa-5a9a882300f7",
+      "title": "Main Framework Pick up from 9.11 Start Luxor 9.14",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\ec\\ec63b6b5f8ca032f01df47f92479fe124d65c164eab16752874d2906aae0f473",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa3dc63-830c-83e8-b3fa-5a9a882300f7.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aa3dc63-830c-83e8-b3fa-5a9a882300f7.md"
+    },
+    {
+      "conversation_id": "6ab4a1a7-ca60-83e8-a7db-c38d88fc2191",
+      "title": "NCAA Handoff Summary",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "worker routed to human review"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "NCAA",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\98\\98330ecaf54a97fa9a2ad3f063e64f5da3b55050cfe8b96afdc064c44222d430",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4a1a7-ca60-83e8-a7db-c38d88fc2191.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab4a1a7-ca60-83e8-a7db-c38d88fc2191.md"
+    },
+    {
+      "conversation_id": "6aaeb4c0-f520-83e8-b388-44fc89fb1046",
+      "title": "NCAA Methodology Walkthrough",
+      "reasons": [
+        "capture warnings: non_text_part:audio_transcription"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "NCAA",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\33\\334f761ef8e5a64c0d65ddca7441206653248288d4910ee280e663f5fbabe218",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aaeb4c0-f520-83e8-b388-44fc89fb1046.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aaeb4c0-f520-83e8-b388-44fc89fb1046.md"
+    },
+    {
+      "conversation_id": "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+      "title": "Old_Archive_Chat_Consolidation",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "Archive",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\74\\7453b6fcbf7af7b37f162214f8f439be7afc68b9f3e54af0a515256a2fde511d",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab43fde-6ab4-83e8-946a-3cb584acc69e.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab43fde-6ab4-83e8-946a-3cb584acc69e.md"
+    },
+    {
+      "conversation_id": "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+      "title": "Own Voice Explanation",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:audio_transcription"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\e1\\e17da4e90dcdbda5b831ea45514e1ee225ddf0742fb4c524be6cdc9ff3d525df",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab60a10-99a8-83e8-84bf-91687a0e42f4.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab60a10-99a8-83e8-84bf-91687a0e42f4.md"
+    },
+    {
+      "conversation_id": "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+      "title": "Pivot Pete Chat",
+      "reasons": [
+        "lifecycle_state unknown",
+        "project classification uncertain",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "worker routed to human review",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "cross-project",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\ea\\ea01896dfe5011dfb01bcd82689d8d080674b7d68e482a14fd25aeaa83ff4642",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab5a02d-229c-83e8-a13b-07c0cafd3b25.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab5a02d-229c-83e8-a13b-07c0cafd3b25.md"
+    },
+    {
+      "conversation_id": "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+      "title": "Reconcile current taxonomy",
+      "reasons": [
+        "lifecycle_state unknown",
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:audio_transcription,non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "unknown",
+      "primary_project": "GCE Framework",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\e7\\e74eb921bfbfdf21c323250fbdeb0c67a0ad0049f76d183a97ba07cfd76e40d0",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab459d2-3e18-83e8-af7e-13dec8b4b512.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab459d2-3e18-83e8-af7e-13dec8b4b512.md"
+    },
+    {
+      "conversation_id": "6aaaaf47-58d8-83e8-98c0-2e229409b3fb",
+      "title": "Reorganize Hardening Artifacts",
+      "reasons": [
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "Employment",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\09\\090146aa316d051f3e39e8d89f339410487bf286119c1b0f1585eb4836eb53f7",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aaaaf47-58d8-83e8-98c0-2e229409b3fb.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6aaaaf47-58d8-83e8-98c0-2e229409b3fb.md"
+    },
+    {
+      "conversation_id": "6ab45301-0944-83e8-8ee4-15e6efad8b78",
+      "title": "VoiceBridge Cleanup Optimization",
+      "reasons": [
+        "conflicting state reported by worker",
+        "flagged framework_candidate -- not promoted, needs human ruling",
+        "capture warnings: non_text_part:image_asset_pointer"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "active",
+      "primary_project": "VoiceBridge",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\26\\269f00d0c5470ad19e737e319e17adc99847c8691f40b127979560c7a46ad329",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45301-0944-83e8-8ee4-15e6efad8b78.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab45301-0944-83e8-8ee4-15e6efad8b78.md"
+    },
+    {
+      "conversation_id": "6ab5940f-4d90-83e8-8471-41660ce6cc65",
+      "title": "Yahoo Fantasy",
+      "reasons": [
+        "conflicting state reported by worker"
+      ],
+      "capture_state": "captured",
+      "capture_quality": "complete_with_warnings",
+      "lifecycle_state": "completed",
+      "primary_project": "Fantasy Sports",
+      "source_artifact_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\EVIDENCE\\blobs\\sha256\\76\\76cb4e540154e7b48a11f75cc22db1f958daafbcd49d34f2695e2293fd09f4f9",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab5940f-4d90-83e8-8471-41660ce6cc65.json",
+      "summary_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\summaries\\6ab5940f-4d90-83e8-8471-41660ce6cc65.md"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-07",
+  "conversation_ids": [
+    "6ab59212-b8f8-83e8-a103-46cece2caf2f",
+    "6ab45301-0944-83e8-8ee4-15e6efad8b78",
+    "6ab5940f-4d90-83e8-8471-41660ce6cc65"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab59212-b8f8-83e8-a103-46cece2caf2f",
+      "title": "Sleepers",
+      "turns": 383,
+      "date": 1790284307.698743,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab59212-b8f8-83e8-a103-46cece2caf2f.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab59212-b8f8-83e8-a103-46cece2caf2f.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab45301-0944-83e8-8ee4-15e6efad8b78",
+      "title": "VoiceBridge Cleanup Optimization",
+      "turns": 47,
+      "date": 1790202625.772009,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab45301-0944-83e8-8ee4-15e6efad8b78.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45301-0944-83e8-8ee4-15e6efad8b78.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab5940f-4d90-83e8-8471-41660ce6cc65",
+      "title": "Yahoo Fantasy",
+      "turns": 92,
+      "date": 1790284816.168086,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab5940f-4d90-83e8-8471-41660ce6cc65.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab5940f-4d90-83e8-8471-41660ce6cc65.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

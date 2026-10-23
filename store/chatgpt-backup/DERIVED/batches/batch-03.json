@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-03",
+  "conversation_ids": [
+    "6ab609dd-25d0-83e8-b9f4-bd5552213d90",
+    "6aac5879-875c-83e8-9c88-d378c37d6910",
+    "6aac9fb9-f1bc-83e8-86c1-956402c68d64",
+    "6ab536a9-0ad8-83e8-8427-23ae267cfe72",
+    "6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab609dd-25d0-83e8-b9f4-bd5552213d90",
+      "title": "Framework Postmortem Review",
+      "turns": 11,
+      "date": 1790314973.988391,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab609dd-25d0-83e8-b9f4-bd5552213d90.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab609dd-25d0-83e8-b9f4-bd5552213d90.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aac5879-875c-83e8-9c88-d378c37d6910",
+      "title": "GCE Cleanup Handoff - Old Version Prior 9.21",
+      "turns": 1332,
+      "date": 1789679738.259724,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aac5879-875c-83e8-9c88-d378c37d6910.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aac5879-875c-83e8-9c88-d378c37d6910.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aac9fb9-f1bc-83e8-86c1-956402c68d64",
+      "title": "GCE Development Design Brainstorm",
+      "turns": 594,
+      "date": 1789697978.963671,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aac9fb9-f1bc-83e8-86c1-956402c68d64.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aac9fb9-f1bc-83e8-86c1-956402c68d64.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab536a9-0ad8-83e8-8427-23ae267cfe72",
+      "title": "GCE_Cable_Car_GD",
+      "turns": 1723,
+      "date": 1790260905.780228,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab536a9-0ad8-83e8-8427-23ae267cfe72.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab536a9-0ad8-83e8-8427-23ae267cfe72.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe",
+      "title": "GCE_Kimi_Scraper",
+      "turns": 54,
+      "date": 1790188427.322968,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab41b8a-78a4-83e8-9b36-58ec3c3c84fe.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "provider": "kimi",
+  "capture_path": "dom-snapshot",
+  "conversations": {
+    "conv-synth-001": {
+      "title": "Wave-1 synthetic fixture",
+      "html": "<div data-conversation=\"conv-synth-001\"><p>msg one</p></div>"
+    },
+    "conv-synth-002": {
+      "title": "Conversazione di prova — UTF-8",
+      "html": "<div data-conversation=\"conv-synth-002\"><p>contenuto non ascii</p></div>"
+    },
+    "conv-synth-003": {
+      "title": "Synthetic three",
+      "html": "<div data-conversation=\"conv-synth-003\"><p>msg three</p></div>"
+    }
+  }
+}

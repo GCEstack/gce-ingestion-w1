@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gce-ingestion"
+version = "0.1.0"
+description = "Cross-provider conversation ingestion (Calibro impl design; Talon->Keel Wave-1 build)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+gce-chatgpt-backup = "gce_ingestion.cli.chatgpt_backup:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

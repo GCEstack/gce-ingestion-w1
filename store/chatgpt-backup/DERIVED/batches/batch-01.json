@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-01",
+  "conversation_ids": [
+    "6ab45849-8430-83e8-bfce-3696208c5e67",
+    "6aa32d59-d38c-83e8-9081-d91f4210022c",
+    "6ab5e48d-bfe4-83e8-b0c6-80265e945d28",
+    "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+    "6ab61052-2db0-83e8-8c47-53f954b8d2a5"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab45849-8430-83e8-bfce-3696208c5e67",
+      "title": "Amazon Bedrock Utilization Chat",
+      "turns": 199,
+      "date": 1790203978.217196,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab45849-8430-83e8-bfce-3696208c5e67.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab45849-8430-83e8-bfce-3696208c5e67.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aa32d59-d38c-83e8-9081-d91f4210022c",
+      "title": "Cancel Albert",
+      "turns": 38,
+      "date": 1789078875.261493,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aa32d59-d38c-83e8-9081-d91f4210022c.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa32d59-d38c-83e8-9081-d91f4210022c.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab5e48d-bfe4-83e8-b0c6-80265e945d28",
+      "title": "Cash Advance Apps",
+      "turns": 10,
+      "date": 1790305423.19733,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab5e48d-bfe4-83e8-b0c6-80265e945d28.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab5e48d-bfe4-83e8-b0c6-80265e945d28.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+      "title": "Compare Florida Flights",
+      "turns": 290,
+      "date": 1790366321.572882,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab6d270-f25c-83e8-add8-9d4650bddb9b.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab6d270-f25c-83e8-add8-9d4650bddb9b.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab61052-2db0-83e8-8c47-53f954b8d2a5",
+      "title": "Cross session reconciliation",
+      "turns": 231,
+      "date": 1790316627.722883,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab61052-2db0-83e8-8c47-53f954b8d2a5.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab61052-2db0-83e8-8c47-53f954b8d2a5.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

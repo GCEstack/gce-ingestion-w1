@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-05",
+  "conversation_ids": [
+    "6aa77efb-4818-83e8-b885-8dc57bd6eb02",
+    "6ab4753b-e7d4-83e8-aa71-129662cb5015",
+    "6aa3dc63-830c-83e8-b3fa-5a9a882300f7",
+    "6ab4a1a7-ca60-83e8-a7db-c38d88fc2191",
+    "6aaeb4c0-f520-83e8-b388-44fc89fb1046"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6aa77efb-4818-83e8-b885-8dc57bd6eb02",
+      "title": "MHI Prep - Conversation - Luxor 9.14",
+      "turns": 230,
+      "date": 1789361915.880377,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aa77efb-4818-83e8-b885-8dc57bd6eb02.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa77efb-4818-83e8-b885-8dc57bd6eb02.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab4753b-e7d4-83e8-aa71-129662cb5015",
+      "title": "MLB Cleanup Assessment",
+      "turns": 60,
+      "date": 1790211389.034704,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab4753b-e7d4-83e8-aa71-129662cb5015.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4753b-e7d4-83e8-aa71-129662cb5015.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aa3dc63-830c-83e8-b3fa-5a9a882300f7",
+      "title": "Main Framework Pick up from 9.11 Start Luxor 9.14",
+      "turns": 118,
+      "date": 1789123684.236061,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aa3dc63-830c-83e8-b3fa-5a9a882300f7.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aa3dc63-830c-83e8-b3fa-5a9a882300f7.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab4a1a7-ca60-83e8-a7db-c38d88fc2191",
+      "title": "NCAA Handoff Summary",
+      "turns": 184,
+      "date": 1790222765.107187,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab4a1a7-ca60-83e8-a7db-c38d88fc2191.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab4a1a7-ca60-83e8-a7db-c38d88fc2191.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aaeb4c0-f520-83e8-b388-44fc89fb1046",
+      "title": "NCAA Methodology Walkthrough",
+      "turns": 511,
+      "date": 1789834433.322917,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aaeb4c0-f520-83e8-b388-44fc89fb1046.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aaeb4c0-f520-83e8-b388-44fc89fb1046.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}

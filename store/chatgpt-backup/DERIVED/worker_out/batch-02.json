@@ -1,0 +1,233 @@
+{
+  "schema": "gce.chatgpt.worker_output.v1",
+  "worker": "w-batch-02",
+  "workstream": "batch-02",
+  "conversation_ids": [
+    "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+    "6ab189d7-a29c-83e8-b616-34665f1f9279",
+    "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+    "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+    "6aa84361-d1f0-83e8-a377-afa79a05694e"
+  ],
+  "classifications": [
+    {
+      "conversation_id": "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+      "primary_project": "EC8",
+      "secondary_projects": [
+        "GCE Framework"
+      ],
+      "workstream": [
+        "verification",
+        "governance",
+        "recon",
+        "planning"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "implementation_truth",
+        "artifact_reference",
+        "reusable_process",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Lifecycle is unknown: the conversation closed with a Coda cleanup ruling AUTHORIZED but no evidence in-chat that the cleanup was ever executed, and nothing in the record proves the work continued.",
+        "Content references EC8 AI Convergence governance artifacts that predate the 2026-09-25 seat freeze (e.g. 20260917-CALIBRO-LC1-PROVENANCE-STAGE-RULING.md, LC-2/LC-3 verdicts); currency unproven against seat_registry.json."
+      ],
+      "confidence": 0.68,
+      "basis": "Digest turns 1-37. Opening assistant turn asserts a loaded ground state (turn 3): 'CONFIDENCE: 96% — Ground state loaded ... Sealed convergence artifact: _PC_AUDIT\\EC8_AI_Convergence_v0.3.2.md ... Authority remains separated: model output != seat authority; Don is final authority.' Middle/tail turns show a Luce read-only recon returned 88% with 'Phase 3 CLOSED -> Phase 4 HOLD', and a Coda ruling 'STATUS: PROCEED — CLEANUP PASS AUTHORIZED WITH BOUNDED SCOPE' accepting A1-A4, ruling B1 (FINAL.zip authoritative, no ZIP deleted), B3 (wave0-2 and ECAI Phase 1-3 are parallel/complementary lineages, neither superseding), B4 (no move for _PC_AUDIT\\work_v032\\). The memo asserts v0.3.2 = CANON CANDIDATE / NOT PROMOTED and that 'no cleanup has yet been authorized or performed' until that ruling.",
+      "basis_spans": "turns 1-37 (digest head 1-12, 5 longest middle turns, tail 12; specifically turn 3, the Luce-return assessment turn, and the Coda-ruling plus memo tool turns)",
+      "needs_reconciliation": true,
+      "conflict_detail": "The conversation contradicts itself about the status of EC8_AI_Convergence_v0.3.2.md. Turn 3 (open) states at 96% confidence that the v0.3.2 artifact is the 'sealed convergence artifact' and that the 'currently accepted EC8 architecture and governance [are] intact'. The later Luce recon assessment and the memo it produced state the opposite: 'v0.3.2 is not canon. It is a sealed canon candidate with unresolved Luce governance holds' and 'the implemented system is further behind the methodology/spec than the folder names might suggest', with methodology authority actually at v0.3.1-K baseline. The opening posture was not corrected in place; the two readings of the same artifact coexist in the record. Not resolved by this worker."
+    },
+    {
+      "conversation_id": "6ab189d7-a29c-83e8-b616-34665f1f9279",
+      "primary_project": "EC8",
+      "secondary_projects": [
+        "DevPad",
+        "GCE Framework"
+      ],
+      "workstream": [
+        "architecture",
+        "implementation",
+        "governance",
+        "decision_making",
+        "handoff",
+        "troubleshooting"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "architecture",
+        "implementation_truth",
+        "artifact_reference",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Lifecycle unknown: the conversation's final act is a read-only session postmortem that itself concludes the build did not complete, leaving the value-materialization implementation open and unverified in this record.",
+        "Runs 2026-09-21 to 2026-09-25 06:14Z, straddling the 2026-09-25 seat freeze; early turns reference the retired Kimi lane (Kimi Desktop / Kimi Terminal) and the whole seat roster it asserts requires reconciliation against seat_registry.json."
+      ],
+      "confidence": 0.72,
+      "basis": "Digest turns 1-252. Turn 1 titles the lane 'Edge Crew Data Architecture'; turn 3 states the governing boundary 'GCE_DON\\GCE_EC8 is authoritative process/spec authority; Projects\\EC8 is supporting' and 'sport-specific findings only become parent architecture/methodology after cross-sport reconciliation'. Head turn 2 reframes it: 'a UI/dev architecture lane, not a methodology lane ... Kimi Terminal is the frozen state of the methodology'. Tail turns carry a Don/Coda magnitude-source ruling ('no automatic human-text -> numeric conversion'; numeric materialization only on an explicit Don-supplied variable + lane + signed magnitude; MARKET stays contextual; new immutable layer ecq-value-materialization@1.0.0), a Chiave contract-freeze ruling with pins A-H (FixedDec6dp micro-units, ExplicitQuantitativeAssertion as the only numeric input path, valueSurface on SynthesisTransformInputs, successor manifest, no registration), a Nico build prompt, and a read-only GCE SESSION POSTMORTEM concluding the session 'entered a process/architecture loop around canonical Model Synthesis integration' after a real React/Vite DevPad vertical slice was built over the frozen MLB fixture.",
+      "basis_spans": "turns 1-252 (digest head 1-12, 5 longest middle turns, tail 12; specifically the opening lane-definition turns, the Kimi-lane grounding turn, the magnitude-source ruling turn, the Chiave freeze handoff turn, the Nico build-prompt turn, and the closing postmortem turn)",
+      "needs_reconciliation": true,
+      "conflict_detail": "Two disagreements inside the record. (1) Scope/authority: turn 3 and the head turn declare this a data/UI architecture lane that must keep 'methodology decisions in the parent Quant thread', yet later turns of the same chat have the assistant promulgating Don/Coda methodology rulings (magnitude-source decision) and reproducing a 'Coda ruling on Luce memo' as accepted project doctrine. (2) Staleness of a live surface: a tail turn states 'That screen is stale relative to our current ruling. Don/Coda has already ruled the magnitude-source decision', meaning an earlier in-chat screen/prompt was still offering superseded options without being reconciled in place. Additionally the closing postmortem judges the session's own governance expansion against the original 'normal build' ask; whether that expansion was warranted is an open question the record does not close. Not resolved by this worker."
+    },
+    {
+      "conversation_id": "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+      "primary_project": "cross-project",
+      "secondary_projects": [
+        "Personal Admin",
+        "Travel",
+        "Finance"
+      ],
+      "workstream": [
+        "operations",
+        "planning",
+        "documentation",
+        "handoff"
+      ],
+      "lifecycle_state": "completed",
+      "durable_value": [
+        "accepted_decision",
+        "artifact_reference",
+        "reusable_process",
+        "historical_provenance"
+      ],
+      "framework_candidate": false,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "confidence": 0.7,
+      "basis": "Digest turns 1-1099, 2026-09-16 to 2026-09-23. Title says 'Excalibur ledger handoff' but content is a personal operating lane, not GCE project work. Turn 1 sets a Vegas liquidity ledger: '$35 hard cash now; $55.55 old Excalibur still pending; two $50 Excalibur holds pending now, with one more $50 hold expected for Thursday; Friday Luxor moved and locked for 3 nights in the Silver Tower ... Friday funding pool: ~$32.55 + ~$159.78 NY-NY + $22 Amazon = $214.33 ... The bogus $75/night Luxor assumption is explicitly discarded.' Tool turns read Drive artifacts 'Vegas Budget, Hotel Timeline & Liquidity Anchor — 2026-09-14' and 'Vegas Food, Exercise, and Daily Rhythm — Living Plan.docx'. The final user turn is a formal 'GCE UNIVERSAL CHAT CLOSEOUT / RECAP' with explicit DO NOT continue instructions, and the closing assistant recap returns PRIMARY DOMAIN 'Personal / Travel / Health / Job Search interface', CURRENT STATUS 'HANDOFF REQUIRED', CONFIDENCE 97%.",
+      "basis_spans": "turns 1-1099 (digest head 1-12, 5 longest middle turns, tail 12; specifically the opening ledger turn, the Drive-anchor tool turns, the health-handoff turn, and the closeout recap turn)",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    },
+    {
+      "conversation_id": "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+      "primary_project": "Fantasy Sports",
+      "secondary_projects": [],
+      "workstream": [
+        "planning",
+        "data_acquisition"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "reusable_process"
+      ],
+      "framework_candidate": false,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Lifecycle is unknown: the user declares an ongoing two-league workspace and states an intent to ingest lineups, but zero rosters were ingested in the record and the entire conversation spans about 60 seconds; declared intent is not evidence the workspace is live."
+      ],
+      "confidence": 0.6,
+      "basis": "Digest turns 1-10 (complete; the conversation is short enough that head and tail overlap). Single user turn: 'this chat is for both my fantasy football leagues. Sleepers is a dynasty league. Yahoo Fantasy is a brand new draft. I've been in the dynasty league for about 3, 4 years. We're gonna ingest my lineups and we're gonna talk through it.' Assistant sets a working convention: keep the two leagues separated 'so dynasty logic never bleeds into redraft logic', Sleeper judged on age curves / contracts / draft capital / future picks / trade windows / taxi-IR, Yahoo on weekly starts-sits / waivers / streaming / matchups, and asks for league settings (scoring, roster slots, team count, Superflex/1QB, TE premium, PPR, keepers, waiver system, Sleeper future picks) before ingesting. Per-team running view proposed: starters -> bench -> IR/taxi -> positional strengths/holes -> expendable assets -> waiver targets -> trade targets -> weekly decisions. Content is sports strategy with no GCE, EC8 or Framework material in it.",
+      "basis_spans": "turns 1-10 (entire conversation)",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    },
+    {
+      "conversation_id": "6aa84361-d1f0-83e8-a377-afa79a05694e",
+      "primary_project": "GCE Framework",
+      "secondary_projects": [
+        "GCE Stack",
+        "EC8",
+        "VoiceBridge"
+      ],
+      "workstream": [
+        "governance",
+        "operations",
+        "troubleshooting",
+        "architecture",
+        "deployment",
+        "handoff"
+      ],
+      "lifecycle_state": "completed",
+      "durable_value": [
+        "accepted_decision",
+        "implementation_truth",
+        "artifact_reference",
+        "reusable_process",
+        "historical_provenance"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Framework doctrine in this record predates the 2026-09-25 seat freeze and asserts a spine naming seats that are now retired or removed (Kimi, Calibro, Principal Consultant); it must be reconciled against seat_registry.json, not promoted.",
+        "The operating seat spine is not internally consistent between the 2026-09-14 handoff and the 2026-09-23 closeout, and the record never reconciles the two."
+      ],
+      "confidence": 0.8,
+      "basis": "Digest turns 1-783, 2026-09-14 to 2026-09-23. Title is 'Framework Checkpoint Loaded' and the content matches: turn 3 is a LUXOR FRAMEWORK HANDOFF stating core doctrine 'IDENTITY != ROLE != LENS != PERSONALITY != AUTHORITY != MODEL' and 'MODEL != SEAT', an organizational spine of Don -> Coda -> Kimi/Corrado methodology -> Chiave architecture -> Principal Consultant -> Calibro -> Talon -> Keel -> Luce, two Command Center modes, and the experiment gates 'BUILD MUST BE EARNED'. Later turns carry real executed work: a Luce verification finding that HKCU User Shell Folders redirects 17 user folders into Desktop\\04-Data\\ while Desktop itself is not redirected, splitting real data across C:\\Users\\...\\Documents (43 items) and the shell target; Talon and Luce whole-machine/project-estate cleanup waves; profile-root seat/bootstrap routing diagnosed and fixed with a neutral router; VoiceBridge startup recovery; and a Falcon T0 amendment binding Falcon to current EdgeCrew roots and failing closed instead of widening into WNBA/old config. The final user turn is a GCE UNIVERSAL CHAT CLOSEOUT / RECAP, answered with CURRENT STATUS 'COMPLETE / HANDOFF REQUIRED', CONFIDENCE 97%.",
+      "basis_spans": "turns 1-783 (digest head 1-12, 5 longest middle turns, tail 12; specifically the Luxor Framework handoff, the Luce shell-folder verification finding, the Talon/Luce cleanup prompts, the Falcon bootstrap and bounding turns, and the closing closeout recap)",
+      "needs_reconciliation": true,
+      "conflict_detail": "The record carries two incompatible versions of the operating seat spine and never reconciles them. The 2026-09-14 handoff names Kimi/Corrado for methodology, Principal Consultant for specification/translation, and Calibro for implementation design. Later turns in the same conversation route the same functions to different seats (a Falcon bootstrap load with a SESSION_HEADER, then a closeout listing 'Coda, Luce, Talon, Falcon; Big Pickle as model occupant where stated'). Both statements are presented as the active operating state. Compounding this, the whole record predates the 2026-09-25 seat freeze, under which Kimi and Calibro are retired and the Principal_Consultant shell is removed from the namespace. Not resolved by this worker."
+    }
+  ],
+  "summaries": [
+    {
+      "conversation_id": "6ab4921d-6620-83e8-b776-4ed0f0eee1d5",
+      "conversation_purpose": "To establish the ground truth of the EC8 AI Convergence lane and turn it into an authorized, bounded cleanup. The chat drafts and iterates seat prompts (Luce verification, then Luce reconciliation/cleanup planning), reviews what Luce returned, and records a Coda ruling that authorizes a cleanup pass with named scope.",
+      "key_outcomes": "- Luce read-only recon returned 88% confidence: disposition READ-ONLY RECON COMPLETE, hard stop Phase 3 CLOSED -> Phase 4 HOLD.\n- Verified as really implemented: dataset binding/freeze/composite digest, source-only BINDER_FRAMER, DET lane, schema gates, Bedrock runtime substrate, contract-level provenance protections, prior Wave 0-2 isolation/wiring scaffold.\n- Verified as NOT implemented: full PANEL / CONVERGENCE / CURATOR / GATEKEEPER-runner / TERMINAL execution and live Bedrock invocation.\n- Key correction: v0.3.2 is NOT canon; it is a sealed canon candidate with open Luce governance holds under Coda. Methodology baseline is v0.3.1-K.\n- Coda ruled PROCEED — CLEANUP PASS AUTHORIZED WITH BOUNDED SCOPE: A1 create 00_EC8_INDEX.md (approved); A2 create GCE_AI_Convergence\\README_CURRENT.md stating v0.3.2 = CANON CANDIDATE / NOT PROMOTED (approved); A3 remove the nested self-copy only after recursive tree hash/manifest equality passes (approved conditionally); A4 add a POC pointer making POC_EC8_AI_Convergence explicitly predecessor/history (approved).\n- B1: _PC_AUDIT\\EC8_v0.3.2_Canon_Candidate_FINAL.zip is the authoritative sealed package; the in-folder candidate zip is not authoritative merely by location; delete neither in this pass.\n- B3: wave0->wave2 and ECAI Phase 1->3 are parallel/complementary lineages in the same program; neither supersedes the other and no prerequisite relationship is asserted.\n- B4: no move for _PC_AUDIT\\work_v032\\ (identified as EC4 redesign material); label it in the index as AUDIT / HISTORICAL CROSS-VERSION WORK pending separate reconciliation.\n- Operating discipline chosen: two-pass — Luce produces the authoritative memo, Talon/Keel execute, Luce verifies after. Luce is explicitly not the janitor.",
+      "important_facts": "- The 2026-09-17 anchor records Phases 1-3 closed, 128/128 tests, Phase 4 held by Don/Coda.\n- Five unpacked v0.3.2 .md bodies are hash-identical: B1CBEAE5...FF46A, 78,909 bytes; all five are copies of the same body.\n- The two candidate ZIPs are distinct files, not duplicates.\n- Persona roster and runtime provider/gateway conflicts remain open.\n- No single folder under the EC8 root is yet labeled CURRENT — the memo calls this the primary navigation defect.\n- GCE_EdgeCrew_Quant is a separate live parent lane and was hard-excluded from all recon; the instruction repeats 'MUST NOT enter, inspect, modify, reconcile, or draw conclusions from the Quant estate'.\n- Model substitution note: a substitute model was used for part of the session; this is a runtime occupant fact, not a seat fact.",
+      "artifacts": "- GCE_DON\\GCE_EC8\\GCE_AI_Convergence\\ (primary target lane)\n- GCE_DON\\GCE_EC8\\_PC_AUDIT\\EC8_AI_Convergence_v0.3.2.md (sealed canon candidate, NOT promoted)\n- GCE_DON\\GCE_EC8\\_PC_AUDIT\\EC8_v0.3.2_Canon_Candidate_FINAL.zip (authoritative sealed package)\n- GCE_AI_Convergence\\EC8_v0.3.2_Canon_Candidate.zip (retained, non-authoritative, provenance)\n- EC8_Architecture_v1.1.md (Phase-2 CONDITIONAL GO), EC8_Runtime_Design_v1.0.md (design-only)\n- ECAI_ANCHOR_PRE_PHASE4_2026-09-17\\ including design\\20260917-CALIBRO-LC1-PROVENANCE-STAGE-RULING.md and config\\det_checks.yaml\n- GCE_EC8_Build\\ with roles.bedrock.yaml; artifacts ECAI_IMPLEMENTATION_CHOICES.md, ARTIFACT_MANIFEST.txt, 20260917-TALON-KEEL-ECAI-build-operation-brief.md\n- Outputs authorized but not evidenced as executed: 00_EC8_INDEX.md, GCE_AI_Convergence\\README_CURRENT.md, POC_EC8_AI_Convergence\\README_STATUS.md\n- Luce reconciliation + cleanup memo (returned in-conversation, no mutations performed)",
+      "open_items": "- The authorized cleanup pass is not evidenced as executed in this conversation: A1 index creation, A2 README_CURRENT.md, A3 conditional dedupe, A4 POC pointer.\n- Phase 4 remains held by Don/Coda; PANEL / CONVERGENCE / CURATOR / GATEKEEPER / TERMINAL runners still absent.\n- v0.3.2 canon promotion still blocked by the open Luce holds.\n- Persona roster and runtime provider/gateway conflicts unresolved.\n- wave0-2 vs ECAI Phase 1-3 lineage still lacks any governing artifact establishing dependency or supersession.\n- Placement of _PC_AUDIT\\work_v032\\ (EC4 material) deferred to a separate reconciliation.",
+      "current_relevance": "unknown beyond the conversation. This is a two-hour conversation from 2026-09-24, two days before the current ingest run, and the record stops at an authorized-but-unexecuted cleanup. Whether the cleanup ran, whether the holds were closed, and whether the lane is still the active AI Convergence lane cannot be determined from this conversation alone.",
+      "authority_warning": "Predates the 2026-09-25 seat freeze; currency unproven. The conversation's own doctrine blocks reference a retired seat (Calibro LC-1/LC-2/LC-3 rulings in the 2026-09-17 ECAI anchor) and the operative seat set assumed here must be checked against seat_registry.json before any use. Nothing here is canon: the Coda rulings are chat-scoped statements of what was authorized, not proof it was executed, and the opening turn's 96%-confidence claim that v0.3.2 was the accepted sealed artifact is contradicted later in the same record. Treat the cleanup authorization as unverified history, not current state.",
+      "candidate_routing": "needs_human_review",
+      "confidence": 0.66
+    },
+    {
+      "conversation_id": "6ab189d7-a29c-83e8-b616-34665f1f9279",
+      "conversation_purpose": "To reconstruct the Edge Crew Quant / EC8 state from its artifacts, build the React DevPad so Don can see the Quant machine run instead of reading state dumps, settle how Don's qualitative magnitude input becomes an executable numeric value, and finally to run a read-only postmortem of why the session looped instead of delivering.",
+      "key_outcomes": "- Grounded the lane as a UI/dev architecture lane, separating the frozen Kimi Terminal methodology lane from the Kimi Desktop POC lane (later moot: Kimi was retired as a seat 2026-09-22).\n- Built a real Vite/React/TypeScript DevPad vertical slice over the frozen MLB fixture: 12-game PREGAME slate, event selection, separate BASELINE view, component/evidence drill-down, provenance, uncertainty/evidence state, generic sport-module boundary, immutable Baseline, deterministic state identity, injected clock, read-only enforcement.\n- Don/Coda magnitude-source ruling landed: no automatic human-text/classification -> numeric conversion; classification stays descriptive; a quantitative Don assertion exists only when Don explicitly declares target variable + target lane + signed magnitude; qualitative-only input yields zero executable values; one assertion = one value, no auto-duplication; MARKET stays contextual unless explicitly expressed as an allowed variable adjustment; VALIDATED/UNVALIDATED/REFUTED/EXPIRED preservation rules; FULL/PARTIAL/UNVERIFIABLE remain orthogonal and do not scale magnitude.\n- New immutable layer ecq-value-materialization@1.0.0 and a new MSOV_ identity were frozen; the certified Don Delta envelope was left untouched.\n- Chiave contract freeze pins A-H accepted: FixedDec6dp as signed integer micro-units (1e-6) with a single roundHalfUpMicro primitive and MISSING != ZERO; ExplicitQuantitativeAssertion as the only numeric input path; suppression matrix; generic opaque valueSurface on SynthesisTransformInputs (parent never interprets variable/lane ids), consumed inside apply() not stored, invariants 1/6 intact; envelopes value-materialization-envelope-v1 and explicit-quant-assertion-v1; sta-sha256-v1 replay paths and verifyValueMaterializationHash to be built; successor manifest (e.g. mlb@1.1.0) populating overlay_acceptance + input_requirements + value_materialization with the 2026-09-15 frozen manifest left immutable; Nico may add fixture/contract fields/tests but must not touch the math core, lane map, bounds, frozen manifest or Don Delta envelope; no registration yet.\n- Route set as Chiave freeze -> Nico implementation -> Luce verification -> Chiave seam seal -> canonical registration.\n- Session postmortem concluded the session produced substantial valid software but then entered a process/architecture loop around canonical Model Synthesis integration; the trigger was Slice3's shell exposing that canonical synthesis lacked an executable transform, which should have bounded delivery but instead opened recursive semantic, schema and staffing gates. Original ask classified as a NORMAL build, not an architecture change.",
+      "important_facts": "- Original objective was narrow: frozen MLB state -> React DevPad -> MLB slate -> one game -> Baseline -> drill-down/evidence/provenance, i.e. 'Let me see the Quant machine operating in the DevPad instead of reading terminal/state dumps.'\n- Governing boundary restated at open: GCE_DON\\GCE_EC8 is authoritative process/spec authority, Projects\\EC8 is supporting; sport-specific findings only become parent architecture/methodology after cross-sport reconciliation.\n- A Drive index artifact EC8_EDGE_CREW_QUANT_CURRENT_INDEX_2026-09-20 (Coda seat, governance index) was read as the front door for Edge Crew Quant, separating current cross-sport framework from sport-specific methodology and historical provenance; spine reads BASELINE -> STATUS SUMMARY -> USER DASHBOARD -> DRILL-DOWN -> HUMAN INPUT -> CLASSIFY/VALIDATE -> ...\n- ecq-synthesis-v1 was NOT registered as canonical by the end of this conversation.\n- A live DevPad screen was found to be stale relative to the magnitude-source ruling and the in-chat instruction was to choose 'Option 4 — type your own answer' rather than the offered options 2 or 3.",
+      "artifacts": "- GCE_DON\\GCE_EC8\\GCE_EdgeCrew_Quant\\02_Falcon\\Runs\\2026-09-14\\INDEX.md\n- GCE_ORG\\...\\06_HANDOFFS\\Nico\\20260924-CHIAVE-ECQ-VALUE-MATERIALIZATION-CONTRACT-FREEZE-RULING.md\n- mlb_ecq_synthesis_v1.ts, tsconfig.node.ts, build_delivery_reconciled_20260908.py, schema.sql\n- Drive: EC8_EDGE_CREW_QUANT_CURRENT_INDEX_2026-09-20; EC8_EDGE_CREW_MAIN_HANDOFF_NFL_METHODOLOGY_TO_GCE_BUILD_2026-09-20 (.docx/.md); EC8_EDGE_CREW_QUANT_NFL_COMPONENT_PROFILE_v0.1_2026-09-20; EC8_NFL_METHODOLOGY_TO_BUILD_ANCHOR_COMMIT_2026-09-20; NFL_ADAPTER_v1.0.2-LOCKED.md; NFL_DATA_REQUIREMENTS_MATRIX.md; NFL_COMPONENT_DATA_RECONCILIATION.md; NFL_DATA_DECISION_REGISTER.md\n- Drive data estate seen in inventory: 01_games.csv through 08_defensive_front.csv; C_DRIVE_SALVAGE_CATALOG_2026-08-29.md\n- Reusable prompt artifact 'nico-value-materialization-build' (Nico implementation brief, binding the Chiave freeze)",
+      "open_items": "- Nico implementation of the Chiave freeze sections A-H was dispatched by prompt, not evidenced as built or tested in this conversation.\n- Luce verification and Chiave seam seal had not occurred here.\n- ecq-synthesis-v1 canonical registration deliberately deferred.\n- verifyValueMaterializationHash and the sta-sha256-v1 replay paths were noted as 'to build'.\n- Successor MLB manifest (e.g. mlb@1.1.0) not yet designed or written.\n- The stale DevPad screen was identified but no evidence it was corrected.\n- The loop/frame-drift root cause was diagnosed but the postmortem was forensic only, read-only, and fixed nothing.",
+      "current_relevance": "Possibly high but unproven. This conversation ran 2026-09-21 to 2026-09-25 06:14Z and contains a concrete, dated, handoff-addressed contract freeze (20260924-CHIAVE-ECQ-...) with an explicit next route of Nico -> Luce -> Chiave -> registration, which is exactly the kind of thing Don or Coda would want to check. Whether any of it was implemented, verified or registered after this record ends cannot be determined from the conversation itself.",
+      "authority_warning": "Predates the 2026-09-25 seat freeze; currency unproven. Early turns ground the work in 'Kimi Desktop' and 'Kimi Terminal' lanes, and Kimi was retired from the seat namespace 2026-09-22, so the frozen-methodology reference this conversation depends on no longer resolves to a live seat. Every Coda/Don/Chiave ruling recorded here is a chat-era statement of authority with a date, not proof of current canon, and the conversation itself shows one of its own on-screen decisions being overtaken ('That screen is stale relative to our current ruling'). The postmortem's seat roster (Don, Coda, Vittorio, Chiave, Nico, Luce) must be checked against seat_registry.json before reuse. The closeout claim of 'substantial valid software' is the model's own self-assessment during a session it also judged to have looped — treat it as contested.",
+      "candidate_routing": "project_handoff_candidate",
+      "confidence": 0.68
+    },
+    {
+      "conversation_id": "6aab0c32-f748-83e8-beb2-d6cdeca659e9",
+      "conversation_purpose": "To run a personal operating lane through a Las Vegas hotel-cash crisis and close it out cleanly: freeze the lodging/hold/cash ledger so it stopped being re-derived each chat, decide what the large hotel holds were really for, and split health/wellness and the coming Orlando/ATEX transition out into their own handoffs so they stopped contaminating the Vegas ledger.",
+      "key_outcomes": "- Opening ledger locked as the authoritative Vegas baseline: $35 hard cash now; $55.55 old Excalibur refund pending with front-desk paperwork in hand for next-day escalation; two $50 Excalibur holds pending plus one more $50 expected Thursday; Thursday bridge ~$8 room + $50 hold, leaving ~$32.55 if the $55.55 clears; Friday Luxor moved and locked for 3 nights in the Silver Tower; Luxor planning hold $50/night x 3 = $150; Friday funding pool ~$32.55 + ~$159.78 NY-NY + $22 Amazon = $214.33; expected cushion after the Luxor hold ~$64.33.\n- Key separation established: the three $50 Excalibur holds are NEXT-WEEK liquidity, not Friday liquidity.\n- The $75/night Luxor assumption was explicitly discarded as bogus.\n- Larger holds (notably Vdara) reframed as an intentional forced-savings / liquidity-protection mechanism rather than a burden.\n- Luxor stay closed operationally 2026-09-20: the $300 resort credit essentially exhausted leaving ~$4.68, and clean-folio behavior confirmed as the mechanism for fast authorization recycling.\n- Cash-flow model was corrected after several mistaken re-derivations and frozen as a date-based ledger so it would stop being recomputed.\n- Health/wellness split into its own lane with a canonical handoff, explicitly not mixed with Vegas cash flow, hotel holds, jobs, ATEX, relocation, phone or GCE.\n- Chat formally closed with a read-only closeout recap at 97% confidence, status HANDOFF REQUIRED.",
+      "important_facts": "- Chat opened as a clean restart because the previous personal chat had grown too large; that context bloat was itself named as part of the problem.\n- A Drive anchor 'Vegas Budget, Hotel Timeline & Liquidity Anchor — 2026-09-14' was read and treated as the durable operating record, explicitly 'a living operating record, not a perfect ledger'.\n- No separate medical/labs/medications artifact was found in Drive during the health search; the only clearly relevant artifact was 'Vegas Food, Exercise, and Daily Rhythm — Living Plan.docx' (current as of 2026-09-02).\n- Health baseline from that artifact: pea protein, avocados, chia/flax/hemp blend, eggs or cheese, electrolytes; walking as default exercise and transportation; documented comfortable walking range ~2-3 miles at time of writing, with newer mileage to supersede it rather than be assumed unchanged; simple breakfast -> focused work block -> filling meal -> walking/workout.\n- A ~$5 In-N-Out burger was judged fine within the current bridge; Palms $50 dining / $100 free play noted but not worth walking to in 102-degree heat to save five dollars.\n- Date range covered: 2026-08-28 (Vegas hotel run begins) through 2026-09-23 (closeout).",
+      "artifacts": "- Drive doc 'Vegas Budget, Hotel Timeline & Liquidity Anchor — 2026-09-14'\n- Drive doc 'Vegas Food, Exercise, and Daily Rhythm — Living Plan.docx' (current as of 2026-09-02)\n- Drive folder /Vegas_Budget\n- Health/wellness canonical handoff produced in-conversation (clean handoff, scope: health, nutrition, exercise, recovery, sleep/energy only)\n- GCE UNIVERSAL CHAT CLOSEOUT / RECAP and its returned session header, accomplishments-by-date record, accepted-decisions list and canon/authority classification",
+      "open_items": "- Closeout status was HANDOFF REQUIRED: the durable Vegas state, the hold rationale, the Vegas-vs-Orlando cost boundary and the health handoff were all left for a successor lane rather than resolved here.\n- The $55.55 old Excalibur refund and the associated front-desk escalation outcome are not recorded as settled.\n- The three $50 Excalibur holds and the additional expected Thursday hold have no recorded disposition.\n- The Orlando/ATEX transition lane was identified but never opened in this conversation.\n- Packing decision, outreach status and next actions were being consolidated at close and not finalized in the visible record.",
+      "current_relevance": "Low as current state, real as personal provenance. The material period modelled is 2026-08-28 to 2026-09-23 and has fully elapsed; a human reading this today would care only as a record of how that Vegas liquidity period was run and closed, not as actionable figures. It has no bearing on GCE, EC8 or Framework work.",
+      "authority_warning": "Predates the 2026-09-25 seat freeze; currency unproven, and here currency is not merely unproven but almost certainly expired — the cash balances, holds and hotel sequence describe a trip that has already ended. Do not read $35 hard cash, the $55.55 pending refund, or the $214.33 Friday funding pool as anyone's current financial state. The only claims in this record with any durability are the process ones (freeze the ledger, stop re-deriving, keep health and transition out of the Vegas lane). The closeout's 97% confidence is the model's own self-rating at the moment of writing, not an external verification.",
+      "candidate_routing": "archive_only",
+      "confidence": 0.78
+    },
+    {
+      "conversation_id": "6ab591d1-5f44-83e8-af63-3f4f9d9722c8",
+      "conversation_purpose": "To open a dedicated fantasy-football workspace covering two of the user's leagues and set the ground rules for how each will be analyzed before any roster data is ingested.",
+      "key_outcomes": "- The chat was established as the control room for two leagues kept strictly separate: Sleeper (dynasty, established, user has played 3-4 years) and Yahoo Fantasy (brand-new draft/redraft).\n- Working rule set: keep the two apart 'so dynasty logic never bleeds into redraft logic'.\n- Sleepers analysis frame defined: current production plus age curves, contracts/role stability, draft capital, future picks, trade windows, rebuild vs contention, taxi/IR, multi-year roster value.\n- Yahoo analysis frame defined: aggressive current-season optimization — weekly starts/sits, waivers, streaming, injuries, matchups, playoff schedule, roster churn, points now.\n- League settings were requested before any ingest, on the stated grounds that scoring/format/roster rules can radically change player value: scoring, roster slots, number of teams, Superflex/1QB, TE premium, PPR format, keeper rules, waiver system, and Sleeper's future picks.\n- A per-team running view was proposed: starters -> bench -> IR/taxi -> positional strengths/holes -> expendable assets -> waiver targets -> trade targets -> weekly decisions.\n- Screenshots were accepted as sufficient input; the assistant offered to reconstruct a full roster from them.",
+      "important_facts": "- The user has been in the Sleeper dynasty league approximately 3-4 years; the Yahoo league is new.\n- No roster, lineup or screenshot had been ingested as of the end of this conversation.\n- The conversation contains no GCE, EC8, DevPad or Framework material — it is personal sports strategy only, and the user did not invoke any seat or GCE session header.",
+      "artifacts": "- None. No files, prompts, handoffs or systems were produced; only a stated analysis frame and a request for league settings and a first roster.",
+      "open_items": "- Roster/lineup ingest for Sleeper has not happened.\n- Roster/lineup ingest for Yahoo has not happened.\n- League settings (scoring, roster slots, team count, Superflex/1QB, TE premium, PPR, keepers, waiver system, Sleeper future picks) were requested and not supplied.\n- No weekly strategy, waiver, trade or start/sit decision has been made yet.",
+      "current_relevance": "unknown. The chat was created 2026-09-24 21:10Z and lasted about 60 seconds; it is the opening turn of what was declared an ongoing workspace, but the record shows no ingest, no follow-through and no later activity. Whether this workspace was actually used, or superseded by a different one, cannot be determined from this conversation.",
+      "authority_warning": "Nothing here is stale or superseded in the GCE sense — there is no Framework, seat or project authority asserted anywhere in this conversation, and the dynasty/redraft separation is a chat-scoped working convention, not canon. The honest warning is about currency rather than authority: this is a declaration of intent with zero executed work, and a 2026-09-24 one-minute conversation is weak evidence that a workspace is live two days later. Do not treat the two league profiles as verified current roster or league state; nothing was verified.",
+      "candidate_routing": "needs_human_review",
+      "confidence": 0.6
+    },
+    {
+      "conversation_id": "6aa84361-d1f0-83e8-a377-afa79a05694e",
+      "conversation_purpose": "To re-enter the GCE Framework from a clean Luxor checkpoint, then execute the three operational priorities that fell out of it: fix real Windows shell-folder/registry routing, consolidate duplicate Framework structures, and run whole-machine cleanup — ending with a formal closeout recap.",
+      "key_outcomes": "- Framework re-entered as coherent without redesign: preserve provenance, use latest accepted operating state when older material conflicts, do not silently rewrite history, and do not build infrastructure merely because the design is interesting.\n- Three operational priorities set and then executed in order: Windows registry/shell-folder truth first, then duplicate Framework structure consolidation, then chat backup/scraping and reconciliation.\n- Luce verified the routing defect: HKCU User Shell Folders (and Shell Folders) redirects 17 user folders into Desktop\\04-Data\\ (Documents, Downloads, Music, Pictures, Videos, Favorites, Links, Contacts, OneDrive, Saved Games, Searches, 3D Objects, both legacy and GUID-KnownFolder names) while Desktop itself is NOT redirected. App-visible truth confirmed as Documents -> Desktop\\04-Data\\Documents and Downloads -> Desktop\\04-Data\\Downloads.\n- Data was confirmed split: the original profile folders still exist and C:\\Users\\Dekan AI Brother\\Documents held 43 items of real user data (resumes, PS1 scripts, Codex, Account Vault, Notion snapshot) that is no longer the shell Documents.\n- Rule established and honoured: do not reorganize, rename, delete, consolidate or move Framework material until actual Windows shell/registry routing is verified; do not restore old PowerShell profiles; treat anything unused ~60 days with no current consumer as a stale candidate; recent timestamp does not mean important; existence does not equal authority; a dependency claim must identify the actual consumer.\n- Talon produced a Windows shell-folder repair execution plan at CHECKPOINT, held for Don review before Keel executed because registry + file moves are materially risky; Talon was flagged as a non-canonical occupant at boot.\n- Multiple cleanup waves executed via Luce (verify) then Talon (execute) separation, with explicit current canonical authorities to protect (e.g. CASA canonical app at Projects\\ACTIVE\\apps-platforms\\DEP_CASA\\casa-companion) and a stated 'last pass tonight' boundary.\n- Profile-root seat/bootstrap routing regression found and fixed: fresh OpenCode sessions launched from the profile root could not resolve commands like 'load luce bootstrap'; diagnosed, corrected with a neutral seat router, live-tested.\n- VoiceBridge recovered operationally: startup behavior diagnosed, canonical startup shortcut refreshed, Desktop launcher created, command surface and named-window navigation extended.\n- Falcon bounded: a real run showed Falcon widening into historical WNBA/config material; Luce verified the missing search-boundary rule; Falcon T0 was amended to bind EdgeCrew to current MLB/Quant roots and fail closed instead of widening.\n- Chat closed with a read-only closeout recap at 97% confidence, status COMPLETE / HANDOFF REQUIRED.",
+      "important_facts": "- Core doctrine restated at the checkpoint: IDENTITY != ROLE != LENS != PERSONALITY != AUTHORITY != MODEL, and MODEL != SEAT. A stable organizational capability does not require every seat in every project.\n- Don = final authority/decision owner; Coda = strategic governance/advisor who should keep the system coherent 'without turning itself into the whole system'.\n- Two Command Center modes were preserved as working placeholders: Condensed (bounded work, e.g. Don + Coda/ChatGPT + Kimi + DeepSeek Flash v4 on Edge Crew Quant) and Full (larger, higher-risk, cross-domain, architectural, production or ambiguous work). Activation criteria were explicitly not frozen yet.\n- Governing placeholder: activate the smallest sufficient operating topology that preserves required authority, evidence, specialist separation and risk controls.\n- Main Framework experiment stayed manual-first and bounded: freeze smallest honest manual test -> Session 0 -> one real low-risk discontinuity task -> independent verification -> STOP / REVISE MANUAL / RUN MORE MANUAL / BUILD MINIMAL. 'No code first; BUILD MUST BE EARNED.'\n- Strategic question left open on purpose: whether minimal shared-state/control materially improves handoff, recovery, challenge or integration of foreign material versus a genuinely strong prompted assistant without meaningful coordination overhead. UNKNOWN states were to be preserved, not designed away.\n- A Principal Consultant readiness gate was defined: correct Windows routing, one understandable operating location, models grounded in correct identity/bootstrap homes, no ambiguous duplicate inbox/handoff paths, reliable chat backup, recoverable Framework history, and no uncertainty about where current work is written — before serious work begins.\n- The machine was described at close as substantially clean, with routing fixed, Falcon EdgeCrew bounded and VoiceBridge operational.\n- Falcon's occupant was deepseek-v4-flash, with MODEL != SEAT asserted in its session header; Big Pickle appears as occupant in other sessions in this record.",
+      "artifacts": "- GCE_IDENTITY\\Luce\\findings_2026-09-14_profile_shellfolders_verification.md\n- GCE_IDENTITY\\Luce\\findings_2026-09-15_whole_machine_cleanup_recon.md\n- GCE_IDENTITY\\Luce\\findings_2026-09-15_projects_authority_duplication_recon.md\n- 06_HANDOFFS\\Don\\20260914-LUCE-shellfolders-verification-finding.md\n- 06_HANDOFFS\\Don\\20260914-LUCE-gce-topology-verification.md\n- 06_HANDOFFS\\Don\\20260915-LUCE-projects-authority-cleanup.md\n- 06_HANDOFFS\\Talon\\20260914-LUCE-shellfolders-consolidation-plan-PROPOSED.md\n- GCE_IDENTITY\\Falcon\\AGENTS.md, GCE_IDENTITY\\Falcon\\SESSION_HEADER.md, GCE_IDENTITY\\Luce\\AGENTS.md, GCE_IDENTITY\\Luce\\SESSION_HEADER.md\n- GCE_SEAT_ROUTER.md, opencode.json, Brother\\AGENTS.md, GCE_DON\\AGENTS.md\n- GCE_DON\\GCE_EC8\\GCE_EdgeCrew_Quant\\02_Falcon\\Runs\\2026-09-14\\INDEX.md\n- C_DRIVE_SALVAGE_CATALOG_2026-08-29.md; AUTH_CREDENTIAL_CLI_PROVIDER_INVENTORY_2026-08-29.md\n- Secrets quarantine set .secrets\\quarantine\\2026-09-15_lares_family\\ (CLASSIFICATION.txt, MANIFEST.txt)\n- Suggested restart prompt: 'Continue GCE cleanup from 9/17. Current state: routing fixed, Falcon EdgeCrew bounded, VoiceBridge operational, machine substantially cleaned...'",
+      "open_items": "- Final loose-file sweep (Luce verifies, Talon executes) was scoped but not performed in this conversation; it was to start in a new chat.\n- Canonical folder-structure reconciliation — what each root is for, what is authority vs supporting, what is cold/archive vs live — was explicitly deferred to a parallel Don+Coda pass.\n- Chat scraping / backup / reconciliation pipeline was named as priority 3 and not completed here.\n- Two documentation contradictions were corrected; whether any remain is not stated.\n- The Principal Consultant readiness gate was not confirmed satisfied.",
+      "current_relevance": "High as provenance and as a source of concrete machine-state findings, but it must not be read as current doctrine. The Windows shell-folder redirect finding, the profile-root seat-routing fix, the VoiceBridge recovery and the Falcon EdgeCrew bounding are dated, specific and checkable, and a human verifying whether the 2026-09-25 hardening pass inherited from this cleanup would find them directly relevant. The Framework spine, however, is superseded and must be reconciled rather than reused.",
+      "authority_warning": "Predates the 2026-09-25 seat freeze; currency unproven and the seat content is known-superseded. The operating spine asserted here names Kimi/Corrado (methodology), Principal Consultant (specification/translation) and Calibro (implementation design); under the 2026-09-25 freeze Kimi and Calibro are retired and the Principal_Consultant shell is removed from the namespace, and the Condensed Command Center example is built around a Kimi lane that no longer exists. The record is also internally inconsistent, naming a different seat set in its 2026-09-23 closeout than in its 2026-09-14 handoff without reconciling them. Treat this conversation as historical provenance and as a candidate for framework_reconciliation_candidate against seat_registry.json; treat the machine-state findings as claims requiring disk verification, not as verified current state.",
+      "candidate_routing": "framework_reconciliation_candidate",
+      "confidence": 0.78
+    }
+  ]
+}

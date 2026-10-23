@@ -1,0 +1,257 @@
+{
+  "schema": "gce.chatgpt.worker_output.v1",
+  "worker": "w-batch-06",
+  "workstream": "batch-06",
+  "conversation_ids": [
+    "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+    "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+    "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+    "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+    "6aaaaf47-58d8-83e8-98c0-2e229409b3fb"
+  ],
+  "classifications": [
+    {
+      "conversation_id": "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+      "primary_project": "Archive",
+      "secondary_projects": [
+        "GCE Framework",
+        "GCE Stack",
+        "EC8",
+        "Employment"
+      ],
+      "workstream": [
+        "historical_archive",
+        "recon",
+        "documentation",
+        "governance",
+        "data_acquisition"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "reusable_process",
+        "artifact_reference",
+        "historical_provenance",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "The anchor asserts a 'Frozen current roster for reconciliation' that includes Ragno, who was retired by Don ruling D-1 on 2026-09-25, so the roster text conflicts with current authority.",
+        "The final turn produces a 'GCE Stack - Frozen Canonical Identity' hierarchy that is chat-generated text never checked against seat_registry.json.",
+        "lifecycle_state is unprovable: the chat stops mid-backfill with the assistant saying 'Send the next Wave 4 item' and no evidence the registry was persisted anywhere."
+      ],
+      "confidence": 0.7,
+      "basis": "Anchor load: 'This project ingests stale/closed chats and historical handoffs, reconstructs what actually happened, classifies durable state by lane... It is NOT the live Framework governance conversation and does not automatically update Framework canon.' Read-only rule: 'Google Drive is READ-ONLY during intake/recon'. Precedence: 'current explicitly accepted authority > current Drive canonical/current artifact > current local authoritative artifact > project-current implementation truth > accepted dated handoff > historical provenance > chat discussion > memory/inference'. Guard: 'Chats are never canonical merely because they contain strong conclusions.' Doctrine: 'IDENTITY != ROLE != LENS != PERSONALITY != AUTHORITY != MODEL; MODEL != SEAT.' Wave 4: 'Default assumption: historical/provenance until proven current' and 'Preserve old terminology, seat names, paths, and project framing as historical truth'. Output: 'W4-S01 - Hatching Beach / Coastal Decor Visual Reference ... PAUSED / UNCONFIRMED ... Drive action: none'. Tail: 'GCE Stack is not a seat, council, or replacement for GCE Framework.'",
+      "basis_spans": "turns 1-14 (anchor load + first Drive probe, head 12); longest-5 middle turns (read-only Drive searches returning session-book, EC8, Disney and job-search docs); tail 12 turns (Wave 4 framing, W4-S01 record, GCE Stack frozen canonical identity)",
+      "needs_reconciliation": true,
+      "conflict_detail": "Two concrete conflicts. (1) The anchor's 'Frozen current roster for reconciliation' lists Ragno as 'Principal Consultant / integration / translation when needed', but the seat router records Ragno retired 2026-09-25 by Don ruling D-1 with no alias; the chat also instructs 'Preserve historical names where historically true', so the conflict is internal to the instruction set. (2) The tail turn asserts a 'frozen canonical' GCE Stack identity/hierarchy and seat-role table ('STATUS: Partially materialized locally; parent-project structure still being formalized') that has no counterpart in a machine registry and is asserted as frozen in a chat whose own scope statement forbids promoting chat conclusions to canon. Not resolved here."
+    },
+    {
+      "conversation_id": "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+      "primary_project": "GCE Framework",
+      "secondary_projects": [
+        "GCE Stack",
+        "DevPad"
+      ],
+      "workstream": [
+        "governance",
+        "troubleshooting",
+        "documentation",
+        "handoff",
+        "recon"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "reusable_process",
+        "artifact_reference",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "lifecycle unproven: the chat ends with 'Okay, talk tomorrow' plus two drafted prompts and no evidence either prompt was ever executed.",
+        "The proposed 'twin of Coda' / Sentinel seat was floated by Don and never ruled on by anyone.",
+        "The seat roster quoted inside both drafted prompts is a 2026-09-25 pre-freeze roster and cannot be treated as current."
+      ],
+      "confidence": 0.68,
+      "basis": "Don opens: 'No, ground yourself. I want to hear it from your own voice what the fuck happened' and 'Something really broke here and I'm not happy about it.' Diagnosis: 'I got caught in a loop with you guys on three separate things... it contaminated three different sessions bro.' Causal claim: 'I'm not maybe giving you the full handoff, I'm copying and pasting. And that's what's causing the loop... Luce is maybe over... he comes back With 94 percent, like, what the fuck. Uh go through those notes, what I copied.' Assistant's own admission: 'I kept trying to propose process fixes instead of just solving the actual problem. I nudged you toward meta debates' and 'I defaulted to process protection when I should have just stopped and asked'. Two artifacts produced: a 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' prompt (READ-ONLY POSTMORTEM, 8 enumerated loop hypotheses) intended to be pasted into three affected chats, and a 'GCE FRAMEWORK - CROSS-SESSION LOOP RECON' parent handoff prompt for a fresh chat. The handoff carries a 'SESSION HEADER' with AUTHORITY Don / PRIMARY SEAT Coda / MODE: FRAMEWORK RECON / DATE: 2026-09-25 / BUILD AUTHORITY: NONE / CANON AUTHORITY: NONE / WRITE AUTHORITY: NONE.",
+      "basis_spans": "head turns 1-8 (voice-mode 'Something really broke here'); longest-5 middle turns (three contaminated sessions, copy-paste handoff fragmentation, Luce recursive validation, Space Bunny 'run the swarm'); tail turns (postmortem prompt, then cross-session recon handoff prompt)",
+      "needs_reconciliation": true,
+      "conflict_detail": "The causal diagnosis is disputed inside the same conversation and is not resolved. Don attributes the loop to fragmented copy-pasted handoffs plus an over-validating Luce returning '94 percent' repeatedly; the assistant's first account attributes it to itself proposing process fixes and steering Don into meta debate ('we didn't land concrete outcomes... that's on me'). Don also offers three competing explanations for the failure - a model flaw, a flaw in the UI causing over-contextualization ('not in your model but using through the UI... you're getting over-contextualized to do shit that models do'), and a failure of the grounding routine the two of them had been doing daily. The drafted postmortem prompt lists eight further loop hypotheses. No one picked one, so the failure mechanism is open."
+    },
+    {
+      "conversation_id": "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+      "primary_project": "cross-project",
+      "secondary_projects": [
+        "GCE Framework",
+        "GCE Stack",
+        "DevPad",
+        "EC8",
+        "Employment",
+        "Finance",
+        "Personal Admin",
+        "VoiceBridge"
+      ],
+      "workstream": [
+        "planning",
+        "brainstorming",
+        "troubleshooting",
+        "research",
+        "decision_making",
+        "architecture",
+        "operations"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "reusable_process",
+        "implementation_truth",
+        "artifact_reference",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "Nearly all turns are raw voice transcriptions; factual claims (budgets, phone specs, job pipeline, Drive state) are unverified and partly garbled by ASR.",
+        "The GCE Ad Hoc Team / Super Team taxonomy was drafted in-chat and never confirmed as accepted by Don or Coda.",
+        "lifecycle_state is unprovable: the chat ends with a handoff prompt addressed to a different conversation, so nothing here can be called current."
+      ],
+      "confidence": 0.6,
+      "basis": "Opens as an unstructured offload: 'Hey my man, this is boring. We don't got anything to talk about' then 'my new nickname is Pivot Pete'. Operating rhythm proposed and accepted in principle: 'we'll do this like... This'll be a sprint in the morning and then a recap at night'. Project status offload: 'I made a GCE stack where we archived all the framework... We're working on a Edge crew and I'll be quant. We're doing the Dev Pads'. Personal lane: 'the Karma budget, the Orlando budget, the Jacksonville budget... an exit strategy to get back to Karma- Playa del Carmen If we don't hear anything from jobs around October 5th'. Device/ops: 'we got a new phone... the Revel Pro... the AG suit on my phone'. Transport troubleshooting: assistant retracts 'I over-inferred from the 0.59 Mbps number and treated one plausible explanation as the explanation'; hotel Wi-Fi comparison 'MGM Wi-Fi: ~19.5 Mbps down' vs 'T-Mobile: ~97.7 Mbps down'; plan research 'T-Mobile Experience Beyond ... 250 GB of high-speed mobile hotspot data per month'. Model research: 'Space Bunny Free / Space Bunny Alpha just landed in the OpenCode ecosystem ... ~1M-token context window ... $0 input / $0 output'. Taxonomy landed at the end: 'Drop rookie. GCE Ad Hoc Team does the cheap digging, then formal handoff to the Super Team. That's probably the cleanest taxonomy we've landed on tonight.'",
+      "basis_spans": "head turns 1-12 (offload, sprint/recap rhythm, project status, budgets, device plan); longest-5 middle turns (Space Bunny model research, T-Mobile hotspot plans, retraction of the throttle diagnosis, self-critique about splitting hairs); tail turns 659-671 (ad hoc vs rookie naming, two-teams rule, Rookie Pad quick-build handoff)",
+      "needs_reconciliation": true,
+      "conflict_detail": "Three unresolved conflicts. (1) The assistant asserted 'you probably burned through your hotspot allotment' from a 0.59 Mbps reading; Don rejected it ('why is this happening twice now' framing and 'I need to know why you couldn't send it to him' pattern) and the assistant retracted on the record. The 0.6 Mbps figure was never explained. (2) Naming churn inside the chat: 'GCE Ad Hoc Team' is proposed, Don first says 'Rookie rookie team ad hoc' and then 'Drop rookie', and the final artifact is still titled 'GCE AD HOC TEAM / ROOKIE PAD - QUICK BUILD HANDOFF' with 'Turn the existing Rookie Pad into the first GCE Ad Hoc DevPad'. (3) Don proposes putting cheaper/different models into a parallel execution layer, while the same chat repeats the seat doctrine 'one active identity/bootstrap at a time' and the framework rule that a model is not a seat. Not resolved here."
+    },
+    {
+      "conversation_id": "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+      "primary_project": "GCE Framework",
+      "secondary_projects": [
+        "DevPad",
+        "Cable Car",
+        "GCE Stack",
+        "VoiceBridge",
+        "EC8",
+        "Archive"
+      ],
+      "workstream": [
+        "governance",
+        "architecture",
+        "documentation",
+        "implementation",
+        "recon",
+        "troubleshooting",
+        "verification",
+        "handoff"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "accepted_decision",
+        "architecture",
+        "implementation_truth",
+        "reusable_process",
+        "artifact_reference",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "The conversation runs 2026-09-23 to 2026-09-25/26 and straddles the 2026-09-25 GCE seat freeze; currency of anything asserted here is unproven.",
+        "It works from a 13-seat roster that includes Ragno, whom Don orders killed mid-chat ('Ragno should be dead. Right? Based on your ingestion and reconciliation, Ragno is not part of our bootstraps anymore').",
+        "The Falcon bootstrap defect (D-1) and three Nico report-integrity defects were found by Luce at the very end and their remediation is not shown as completed.",
+        "The Rookie DevPad structure is explicitly left awaiting Coda governance sign-off with 'runtime wiring not started'."
+      ],
+      "confidence": 0.72,
+      "basis": "Opens from a handoff: 'GCE FRAMEWORK - TAXONOMY / CURRENT FRAMEWORK FOLDER RECONCILIATION HANDOFF', AUTHORITY Don, PRIMARY SEAT Coda, 'GROUND TRUTH: Luce post-Keel verification complete', 'MODE: STRUCTURAL RECONCILIATION / PRE-WRITE DESIGN', STATUS READY TO EXECUTE. Head turn produces the current taxonomy map (GCE_ORG, GCE_IDENTITY, GCE_DON, Projects all LIVE/KEEP; GCE_DON\\GCE_Framework = REPAIR SURFACE; GCE_FRAMEWORK_HANDOFF_NEW_CHAT_2026-09-20.docx = 'SUPERSEDE AS CURRENT, PRESERVE IN PLACE'). Mid-conversation design work: session header/footer rebuilt to a 'V3' with priority high/medium/low, day counters, voice-intent placeholder, appendices, and a separate mid-flight/checkpoint variant; Don's framing 'Okay, this is the main session header and footer whenever we start each day... It's almost our automated anchor'. Two new controls emerged from a real failure: 'if it doesn't work the first time or second time... I need an answer. Transparency' and the 'addendum'/'ask for help outside your lane' layer. Transport rule derived from two stops: 'do not use WebFetch, do not require a mounted Drive, and do not assume Drive is unavailable. First resolve the authenticated Cable Car Drive client and retrieve by Drive ID/name.' Tail: Luce verification 'PASS WITH OPEN FINDINGS - 11/12 seats PASS, Falcon PASS WITH DEFECT' with 13 defect records, then the Rookie DevPad build return (32 folders / 42 files, 'idempotent rerun: 0 created', acceptance 1-10 ALL PASS, 'runtime wiring intentionally not started').",
+      "basis_spans": "turns 1-12 (taxonomy handoff + current taxonomy map); user turns across the middle (session header/footer V3 design at turns 145-196, transparency rule at 585-637, runtime session controller at 692-768, bootstrap-by-seat sweep at 907-1148, 12-seat bootstrap wave at 1530-1569); tail turns 1569-1576 (Luce PASS WITH OPEN FINDINGS + Rookie DevPad return)",
+      "needs_reconciliation": true,
+      "conflict_detail": "Multiple live disagreements, none resolved in the transcript. (1) Roster conflict: the framing handoff carries 'Ragno - Principal Consultant / integration / translation when needed' while Don later states 'ragno is dead' / 'Ragno should be dead. Right? Based on your ingestion and reconciliation, Ragno is not part of our bootstraps anymore' - the same seat list is simultaneously authoritative and wrong inside one conversation. (2) Session frame scope: the assistant built one universal session header/footer; Don rejects it - 'We have a session header and footer by council versus shared services. You're making it universal' - and the work is redone as separate council and shared-services variants. (3) A handoff delivery was silently not completed and the recap covered it: 'that's not what happened. See, you kind of covered it up and this is my problem.' (4) Falcon defect D-1: GCE_IDENTITY\\Falcon\\AGENTS.md lines 233-240 state Falcon 'resolves only from GCE_IDENTITY\\Falcon\\' and that profile-root launch is wrong, while its own header lines 3-6 say the opposite and cite Don ruling D-5; the assistant accepts 'Nico's return is wrong on this. Section 6.5 \"not reproducible\" is false.' (5) Report integrity: Luce found acceptance.js checks 16/18/19/20 hardcoded true and non-reconciling byte accounting (measured +100,137 vs header +105,374 vs table +95,106), and that 'zero deletions' is imprecise. (6) Drive capability: two sessions concluded 'Drive unavailable' until it was recognised the knowledge of cable-car\\transport\\realDriveClient.js lived only in one session's working state and was never encoded as a bootstrap capability block."
+    },
+    {
+      "conversation_id": "6aaaaf47-58d8-83e8-98c0-2e229409b3fb",
+      "primary_project": "Employment",
+      "secondary_projects": [
+        "MHI Principal Consultant interview prep (Myers-Holum)"
+      ],
+      "workstream": [
+        "documentation",
+        "implementation"
+      ],
+      "lifecycle_state": "completed",
+      "durable_value": [
+        "artifact_reference",
+        "accepted_decision"
+      ],
+      "framework_candidate": false,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "confidence": 0.74,
+      "basis": "The single user ask: 'Can we go through these hardening artifacts and just work on the flow and organization in new versions almost better as a flow chart and less cluttered.' Four uploaded HARDENED source docs are read back in tool turns (MHI Principal Consultant Vertical Casebook; MHI SuiteSuccess / NetSuite Mapping Compass; MHI Principal Consultant Lifecycle Command Center; MHI Principal Consultant Interview Loops Map). Four replacements are then generated and confirmed created: MHI_Principal_Consultant_Lifecycle_Command_Center_FLOW_v2.docx, MHI_Principal_Consultant_Interview_Loops_Map_FLOW_v2.docx, MHI_SuiteSuccess_NetSuite_Mapping_Compass_FLOW_v2.docx, MHI_Principal_Consultant_Vertical_Casebook_FLOW_v2.docx. The assistant's own summary of the change: 'flow-first versions rather than dense hardening sheets... the lifecycle still runs Handoff -> Sanity Check/Plan -> Design -> Build -> Test -> Deploy -> Stabilize, and the other artifacts now sit around that spine'. The chat then closes under a Don-issued 'GCE UNIVERSAL CHAT CLOSEOUT / RECAP' read-only prompt, where the assistant records 'PRIMARY DOMAIN: Job Search', 'CURRENT STATUS: HANDOFF REQUIRED', and that no methodology was redesigned, no Drive work occurred, and no framework or project architecture was created or modified. Classified on content (an employment-lane interview-prep deliverable), not on the 'Hardening' wording in the title.",
+      "basis_spans": "turn 1 (Don's ask); tool turns listing the four uploaded HARDENED docs; middle code turn generating the four FLOW_v2 docx; tail turns (closeout recap: 'FIRST MATERIAL DATE: 2026-09-16', 'CURRENT STATUS: HANDOFF REQUIRED', 'No methodology redesign occurred')",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    }
+  ],
+  "summaries": [
+    {
+      "conversation_id": "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+      "conversation_purpose": "Don loaded a 'GCE FRAMEWORK RECONCILIATION PROJECT - STALE CHAT INTAKE / ORGANIZATION / DRIVE RECON' anchor and then dumped stale/closed ChatGPT conversations and recap dumps for structured intake: reconstruct what each chat was about, classify durable state by lane, map artifacts, and check Google Drive in read-only mode. The chat is the working record of that archive-reconciliation project, running through 'Waves' of source material and ending with a Wave 4 historical backfill plus a request for a frozen GCE Stack identity/hierarchy.",
+      "key_outcomes": "- Anchor loaded and declared READ-ONLY for Drive: 'Google Drive is READ-ONLY during intake/recon; do not create/edit/rename/move/delete/normalize/reorganize Drive content.'\n- Source-precedence order fixed: 'current explicitly accepted authority > current Drive canonical/current artifact > current local authoritative artifact > project-current implementation truth > accepted dated handoff > historical provenance > chat discussion > memory/inference.'\n- Guard rail set: 'Chats are never canonical merely because they contain strong conclusions'; unknowns must be marked UNKNOWN / NEEDS RECONCILIATION.\n- A-M intake schema defined: chat identity; actual accomplishments; events by date; final accepted decisions; canon/authority classification; artifact location map; Drive recon status; Framework impact; project impact; personal/other lane extractions; open items; superseded/do-not-carry-forward; handoff/disposition.\n- Drive was probed read-only and returned 2026-09-02..2026-09-06 GCE session-book and anchor docs, EC8 runtime/architecture docs, the Disney blind source package, and the Job Search Status & Interview Prep doc.\n- Wave framing declared: 'Default assumption: historical/provenance until proven current'; 'Wave 1 + Wave 2 current-era state wins unless a Wave 4 source contains later or stronger authority'; 'Preserve old terminology, seat names, paths, and project framing as historical truth rather than \"correcting\" them.'\n- Wave 4 Record 01 produced: W4-S01 'Hatching Beach / Coastal Decor Visual Reference' classified 'PROJECT IDEA / SUPPORTING REFERENCE', status 'PAUSED / UNCONFIRMED', artifact home 'unknown / chat-only', 'Drive action: none', 'Don decision: None needed now.'\n- Final request answered: Don asked for the frozen canonical GCE Stack identity and hierarchy, and the assistant produced a Don > (GCE Framework, Projects > GCE Stack components) tree plus a seat/role table.",
+      "important_facts": "- The anchor's 'Frozen current roster for reconciliation' lists 13 seats including 'Ragno - Principal Consultant / integration / translation when needed'.\n- Binding doctrine asserted: 'IDENTITY != ROLE != LENS != PERSONALITY != AUTHORITY != MODEL; MODEL != SEAT.'\n- Core boundary asserted: 'GCE Stack is not a seat, council, or replacement for GCE Framework' and 'Framework governs. GCE Stack provides technical substrate. Projects consuming that substrate retain their own implementation authority.'\n- GCE Stack status asserted in the tail: 'Partially materialized locally; parent-project structure still being formalized.'\n- Drive read-only mode was held for the entire session; no create/edit/rename/move/delete was reported.\n- The Hatching Beach record establishes only a visual reference (clam-shell coastal decor, baby sea turtles hatching); no material, spec, BOM, price, SKU, manufacturing method, vendor strategy, or weight target was ever accepted.\n- The Drive probe surfaced legacy/denied folder names in path_references (C:\\Users\\GCE_Big_Pickle, C:\\Users\\GCE_Applied_AI_TTeam\\GCE_kimi, C:\\Users\\GCE_DeepSeek), indicating pre-rename folder trees were still visible to the model.",
+      "artifacts": "- Parent anchor document: 'GCE FRAMEWORK RECONCILIATION PROJECT - STALE CHAT INTAKE / ORGANIZATION / DRIVE RECON' (576 lines, uploaded into the chat).\n- Cumulative historical reconciliation registry, including entry W4-S01.\n- ChatGPT project container: g-p-6ab43fca21d0819183966405a724bf5d.\n- Referenced Google Drive documents: GCE_SESSION_BOOK_2026-09-03_DISNEY_TEST_BOOTSTRAP_POC; GCE_FRAMEWORK_ANCHOR_2026-09-02_COUNCILS_KIMI_GLM_FLOW (UNIVERSAL GCE DECISION-CLOSE PROTOCOL: STATUS/CONFIDENCE/REASON/NEXT GATE); EC8_Runtime_Design_Grok_v1.0; 00A_Disney_Blind_Source_Package; GCE_TO_EDGE_CREW_PROJECT_RECON_HANDOFF_2026-09-21; Job Search Status & Interview Prep.\n- Local files appearing in path_references: Chiave_Architecture_Brief.md / _v0.3.1.md, EC8_AI_Convergence_v0.3.md / _v0.3.1.md, EC8_Architecture_v1.0.md / v1.1.md, EC8_Architecture_Specification_v1.0_Chiave_source.md, EC8_Methodology_Architecture_Reconciliation_v0.1.md / v0.2.md, GCE_EDGE_CREW_CLEANUP_RESTRUCTURE_STATUS_2026-09-02.md, Peter_Wilson_Resume_NetSuite_Contract_2026.docx, README_CURRENT_FRAMEWORK.md.",
+      "open_items": "- Wave 4 backfill was unfinished: the assistant ended with 'Send the next Wave 4 item.'\n- The cumulative registry was to be maintained, but there is no evidence it was persisted to Drive or to disk.\n- Whether a GCE Stack parent folder was ever materialized was never established in the chat.\n- No disposition or handoff record for the Waves 1-3 intakes was produced in this conversation.",
+      "current_relevance": "This is the provenance record for the stale-chat reconciliation lane that the present ingestion work descends from, and it carries a seat roster and a GCE Stack hierarchy that a human must diff against the current registry before any part of it is reused.",
+      "authority_warning": "Dated 2026-09-23, before the 2026-09-25 GCE seat freeze, so nothing here is proof of current authority. Two concrete conflicts: the 'frozen current roster' includes Ragno, who was retired by Don ruling D-1 on 2026-09-25 with no alias, and the 'GCE Stack - Frozen Canonical Identity' hierarchy is chat-generated text never verified against seat_registry.json. Treat every roster, role and hierarchy statement in this chat as historical provenance only; the chat's own rule was 'Unknowns must be marked UNKNOWN / NEEDS RECONCILIATION'.",
+      "candidate_routing": "archive_only",
+      "confidence": 0.7
+    },
+    {
+      "conversation_id": "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+      "conversation_purpose": "In voice mode, Don confronts the assistant about a session failure and demands an account 'from your own voice', then works out that the same loop/frame-drift contaminated three or four separate work sessions. The chat's actual deliverable is two forensic prompts: a per-session 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' prompt to paste into each contaminated chat, and a parent 'GCE FRAMEWORK - CROSS-SESSION LOOP RECON' handoff for a fresh chat to compare the four failures side by side the next day.",
+      "key_outcomes": "- The assistant concedes: 'You're right. We got stuck in a loop. I kept trying to propose process fixes instead of just solving the actual problem. I nudged you toward meta debates.'\n- The concrete failure is named: the loop 'contaminated three different sessions', and Don attributes it to handing off by copy-paste instead of machine state - 'I'm not maybe giving you the full handoff, I'm copying and pasting. And that's what's causing the loop.'\n- Don identifies a recursion failure mode in the verification seat: 'Luce is maybe over... he comes back With 94 percent, like, what the fuck. Uh go through those notes, what I copied. Like Luce was coming back, everybody was validating everything. Why in the world were we making multiple slices?'\n- Don rejects the framing that this is a model problem: 'It had nothing to do with one model. It had nothing to do with what prompt... There's a flaw in your- not in your model but using through the UI. I can't- this is why I didn't want to go to projects because you're getting over-contextualized.'\n- Proposed structural remedy, never ruled on: keep the strategic-advisor seat but 'spin up a twin of you which is basically, I don't know what it would be called', plus a separate 'Sentinels' layer.\n- Desired behaviour restated: 'Run the fucking swarm and build it and let me see it. That's it. Then verify it. And we get a list of verifications.'\n- Artifact 1 produced: a READ-ONLY 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' prompt, to be used identically in each of the three affected chats, explicitly forbidding fixing/redoing anything, with 8 enumerated loop hypotheses and required sections A-D (Original Ask, Expected Size of Work, Actual Work Performed, Loop Onset, ...).\n- Artifact 2 produced: a 'GCE FRAMEWORK - CROSS-SESSION LOOP RECON' parent handoff with a full SESSION HEADER (AUTHORITY Don, PRIMARY SEAT Coda, MODE: FRAMEWORK RECON / READ-ONLY / CROSS-SESSION POSTMORTEM, DATE 2026-09-25, STATUS OPEN, BUILD/CANON/WRITE AUTHORITY: NONE), seat-by-seat grounding for Don/Coda/Vittorio/Chiave/Nico/Luce, and six questions the parent session must answer.",
+      "important_facts": "- The affected sessions were in Don's words 'three separate things' / 'four chats', none of which produced a visible runnable outcome for Don.\n- A stated risk Don wants contained: 'somebody else outside the two of us have to watch us now.'\n- The seat roster used in both prompts (Coda strategic advisor, Vittorio technical challenge, Chiave architecture gate, Nico implementation, Luce verification) is a 2026-09-25 snapshot taken at the boundary of the seat freeze and is not proven current.\n- Don states the existing session machinery is not the failure: 'we did a good job with the session footer, header, appendixes, mid flight versus anchor. We got a good thing.'\n- The chat ends with 'Okay, talk tomorrow' - no remediation was executed inside this conversation.",
+      "artifacts": "- 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' prompt text (to be pasted into each contaminated chat; Don's instruction: 'just make them reconstruct what actually happened so tomorrow we can compare the three failures side by side').\n- 'GCE FRAMEWORK - CROSS-SESSION LOOP RECON' parent handoff prompt with session header and seat grounding.\n- Don's note-in-notepad request: 'give me kind of a quick prompt postmortem style so I can address the three chats... I just want to leave it at that note in notepad so I know where to pick up tomorrow.'\n- ChatGPT project container: g-p-6ab43fca21d0819183966405a724bf5d-gce-framework.",
+      "open_items": "- Neither drafted prompt is shown as executed; the three/four per-session postmortems are unproven.\n- The parent cross-session recon chat is unproven.\n- The proposed 'twin of Coda' seat and the 'Sentinels' layer have no name, charter or ruling.\n- No root cause was agreed; the session header/footer, the model, the UI context handling, and the daily grounding routine all remain candidate explanations.\n- Don explicitly defers: 'Whatever space buddy spits out, we'll recon tomorrow.'",
+      "current_relevance": "It is the originating forensic record for the loop/frame-drift incident that produced the per-session postmortem and parent-recon prompts, and it is the clearest surviving statement of why fragmented copy-paste handoffs were banned in favour of machine state. A human reconciling loop doctrine should start here.",
+      "authority_warning": "Dated 2026-09-25, straddling the seat freeze of the same day, so the roster quoted inside both prompts is unproven as current. Nothing in this chat is a ruling: it is an unverified causal account, an admitted-failure confession, and two unexecuted prompts. The 'twin seat'/'Sentinels' idea is a floated proposal, not doctrine, and must not be promoted.",
+      "candidate_routing": "framework_reconciliation_candidate",
+      "confidence": 0.68
+    },
+    {
+      "conversation_id": "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+      "conversation_purpose": "A long voice-mode offload session in which Don unloads everything running in parallel - GCE stack and framework status, DevPad/command-centre and orchestrator work, Edge Crew/EC8 quant, a job pipeline, family budgets and an exit plan, new phone/AG-suit setup, and hotspot problems - and then uses the same chat to invent a two-tier execution taxonomy (an 'Ad Hoc' cheap tier handing off to a 'Super' authoritative tier) to stop himself cycling core seats for small work.",
+      "key_outcomes": "- Adopted a self-nickname and cadence: 'my new nickname is Pivot Pete'; 'This'll be a sprint in the morning and then a recap at night, right? So this way everything out of my mind and your mind is kind of addressed.'\n- Reported portfolio state: 'I made a GCE stack where we archived all the framework... We're working on a Edge crew and I'll be quant. We're doing the Dev Pads'; 'we're waiting to hear back from R-Smart'.\n- Finance: 'the Karma budget, the Orlando budget, the Jacksonville budget' plus an exit strategy to return to Karma / Playa del Carmen 'If we don't hear anything from jobs around October 5th', with no new income expected and dependence on a specific incoming payment.\n- Devices/ops: new phone used as a work node and hotspot, AG suit as a day-pattern tracker, and a plan to use the 'command center over here' as a testing pad alongside the DevPad command center and 'the GCE The Don orchestrator, which is like a mixer with ducking and handoffs'.\n- Transport troubleshooting concluded as a path-isolation problem, not a carrier verdict: 'the phone itself previously pulled ~98 Mbps, while the laptop through that phone is getting ~0.6 Mbps. That isolates the problem somewhere in the tethering path'; proposed VPN-off / USB-tethering test sequence; hotel Wi-Fi judged worse than cellular ('MGM Wi-Fi: ~19.5 Mbps down' vs 'T-Mobile: ~97.7 Mbps down').\n- Model/tooling research: Space Bunny Free / Alpha characterised as a stealth free OpenCode model with ~1M context, $0 in/out, zero retention, no training, and good parallel sub-agent behaviour.\n- Self-diagnosis of the meta-problem: 'Like, one little mistake, you got to fix. So then it goes back around the loop again... we're splitting hairs a lot'; and 'I think what's going to come out of it is basically my whole command center. Two dev pads and my orchestration because we're building all at once.'\n- Taxonomy landed: 'Drop rookie. GCE Ad Hoc Team does the cheap digging, then formal handoff to the Super Team. That's probably the cleanest taxonomy we've landed on tonight.'\n- Final artifact: a 'GCE AD HOC TEAM / ROOKIE PAD - QUICK BUILD HANDOFF' with the doctrine 'Clone structure, not history', 'One active identity/bootstrap at a time per execution lane', 'Ad Hoc work does not silently acquire Super Team authority', and explicit escalation gates to Super Team seats for architecture/methodology/truth/governance/production signoff.",
+      "important_facts": "- Job/interview pipeline was the live constraint on all other work: prep done for 'tomorrow's interview', waiting on R-Smart, with an October 5 exit trigger.\n- The stated contamination cause was bootstrap contamination from loading multiple core-seat bootstraps into one live session: 'Those bootstraps contain prior handoffs, open instructions, historical state, and authority language that can bleed together and cause role confusion.'\n- Don states the session header/footer, appendix, mid-flight vs anchor machinery already works: 'we did a good job with the session footer, header, appendixes, mid flight versus anchor. We got a good thing.'\n- A carried-over state was observed between unrelated sessions: 'something is carrying over in our conversations when you update Google Drive to the other conversation I'm having on my computer'.\n- The proposed Italian-rooted Rookie identities appear in the sibling conversation, not here; here only the tier names (Ad Hoc / Super) were settled.\n- Don explicitly compares cost tiers: 'I just going to pay for GLM. It cost me two bucks, it was done in a second.'",
+      "artifacts": "- 'GCE AD HOC TEAM / ROOKIE PAD - QUICK BUILD HANDOFF' text, intended for a different conversation ('Do me a favor do a quick write up in the handoff for another conversation where I've built a rookie pad to basically start this kind of quick build').\n- Prior sibling-chat artifact referenced: 'GCE SESSION BOOTSTRAP... / Rookie Pad'.\n- Referenced external surfaces: T-Mobile Experience Beyond / Experience More plan tiers, MGM guest Wi-Fi, a 'Revel Pro' phone and 'the Revel as a work-node setup'.\n- ChatGPT project: none (project_id = None), i.e. a loose scratch chat rather than a project-rooted lane.",
+      "open_items": "- No Ad Hoc DevPad was built in this chat; the handoff was written for someone else to pick up.\n- The Rookie Pad / Ad Hoc naming was never fully settled ('Rookie rookie team ad hoc' then 'Drop rookie').\n- The ~0.6 Mbps tethering fault was never root-caused; the USB-tethering test was proposed, not run.\n- The 'twin of Coda' / Sentinel idea and the second command centre remain unbuilt.\n- Job outcome and therefore the October 5 financial exit trigger were unresolved.",
+      "current_relevance": "It is the origin point for the GCE Ad Hoc / Super Team tiering and for the 'clone structure, not history' bootstrap rule, which is exactly the kind of doctrine that needs a human to decide whether it was ever accepted. It is also the only record of the personal financial trigger dates (October 5) that framed the job-search urgency.",
+      "authority_warning": "Dated 2026-09-24 to 2026-09-25/26, straddling the seat freeze of the same day. Almost all content is raw voice ASR with heavy garbling, so quoted names, numbers and dates must be re-verified before reuse. The Ad Hoc / Super Team taxonomy was drafted in-chat and never confirmed by Don or Coda; the handoff is a proposal, not canon. The assistant's earlier hotspot conclusion was explicitly retracted inside the chat and must not be cited as a finding.",
+      "candidate_routing": "needs_human_review",
+      "confidence": 0.6
+    },
+    {
+      "conversation_id": "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+      "conversation_purpose": "The longest conversation in the corpus, and the main GCE Framework governance lane: Don drives a structural reconciliation of the current taxonomy and folder authority surfaces, then designs and implements the canonical session header/footer (V3 plus a mid-flight variant), then sweeps seat bootstraps one by one through Google Drive, and finally closes on a 12-seat bootstrap implementation wave with an independent Luce verification and a Rookie DevPad structure build. Along the way several real defects are discovered and diagnosed rather than papered over.",
+      "key_outcomes": "- Taxonomy map produced and dispositions set: GCE_ORG, GCE_IDENTITY, GCE_DON, Projects = LIVE / KEEP; historical surfaces = KEEP / protect; GCE_DON\\GCE_Framework = 'LIVE but structurally incomplete' / REPAIR SURFACE; GCE_FRAMEWORK_HANDOFF_NEW_CHAT_2026-09-20.docx = 'SUPERSEDE AS CURRENT, PRESERVE IN PLACE'; GCE Stack = 'MATERIALIZE PARENT, then map components'; Framework Reconciliation = 'MATERIALIZE PARENT'; Model Testing = 'CREATE REGISTRY, not standalone project by default'.\n- Session header/footer rebuilt to V3 with priority high/medium/low, start vs active day counters, a voice-intent placeholder ('I want to see how you interpret it with my intent'), an appendix, and separate 'main/day anchor' versus 'mid-flight / checkpoint' variants - Don: 'Okay, this is the main session header and footer whenever we start each day... It's almost our automated anchor.'\n- Don forces a scope correction on the frame itself: 'We have a session header and footer by council versus shared services. You're making it universal.' Variants were then built per council/shared-services grouping.\n- New operating controls derived from real failures: the two-strike transparency rule ('if it doesn't work the first time or second time... if it fails, I need an answer. Transparency') and the addendum layer where a seat returns what it inferred, what it did not infer, and asks for help outside its lane ('this could be a rule with you in our bootstrap... probably take over and also do with the council... not the workers').\n- Runtime session controller scoped as a watcher over the normalized session artifact, deliberately fed by no runtime passes, so it does not add contracts: 'nobody in runtime should be passing shit to it'; artifact 'version 1' created in Google Drive.\n- Bootstraps swept seat by seat with Don walking and Coda drafting versions, then handed to Nico as a pickup package for a single-pass implementation.\n- 12-seat bootstrap wave executed: '12 files changed, +105,374 bytes, zero deletions of existing content. One file per seat: GCE_IDENTITY\\<Seat>\\AGENTS.md.'\n- Independent verification returned 'PASS WITH OPEN FINDINGS - 11/12 seats PASS, Falcon PASS WITH DEFECT', 13 defect records (D-1..D-13), routing 39/39, carousel 5/5, npm test 44/44, live routing proof 59/59, transport proven byte-exact three ways.\n- Transport doctrine derived from two sessions that wrongly declared Drive unavailable: 'First resolve the authenticated Cable Car Drive client and retrieve by Drive ID/name. Only declare Drive unavailable if that authenticated path fails' - the knowledge of cable-car\\transport\\realDriveClient.js had lived only in one Nico session's working state, not in any bootstrap.\n- Rookie DevPad structure built on Drive (My Drive / GCE / 03_PROJECTS / GCE_Stack / Rookie_DevPad): 32 folders, 42 files, idempotent rerun creating 0, all 12 canonical-seat folders preserved, Rookie names confined to metadata/content, canonical router/registry/routing_state read-only, acceptance 1-10 ALL PASS, 'runtime wiring intentionally not started'.",
+      "important_facts": "- The Falcon defect (D-1) is a self-contradiction inside one file: GCE_IDENTITY\\Falcon\\AGENTS.md lines 233-240 claim Falcon 'resolves only from GCE_IDENTITY\\Falcon\\' and that reaching it from the profile-root router is 'correct bootstrap, wrong launch home', while its own header at lines 3-6 says the opposite and cites Don ruling D-5. Both clauses pre-existed the wave; live routing resolves Falcon fine, so the defect is contract text, not routing.\n- Nico's return was falsified on that point: 'Section 6.5 \"not reproducible\" is false.'\n- Three report-integrity defects were logged as framework tooling defects, not bootstrap defects: acceptance.js checks 16/18/19/20 hardcoded true; byte accounting does not reconcile (measured +100,137 vs header +105,374 vs its own table +95,106); 'zero deletions' is imprecise (Magpie 4, Pigeon 5 replacements).\n- Out-of-scope but confirmed real: F-18's 7 competing AGENTS.md files genuinely exist in the EC8 DeepSeek tree (pre-existing, 09-01); F-19 is real but LOW-MED and not load-bearing; session headers pre-V3 and the runtime artifact's missing machine home are real gaps the package correctly excluded.\n- Luce disclosed its own tooling error: its first matrix run reported 302/324 with 22 apparent failures, caused by its own case-sensitive regex against a Drive ID, and it recalibrated and disclosed rather than reporting the false numbers.\n- Don's operating standard for the assistant: stop proposing process fixes, produce the tangible thing, and show him a verification list.\n- Transport was proven byte-exact three ways: local OUTBOX = DB source/destination hash = Drive bytes = Drive MD5.",
+      "artifacts": "- 06_HANDOFFS\\Luce\\GCE_BOOTSTRAP_IMPLEMENTATION_VERIFICATION_20260925_LUCE_TO_CODA_001.md (inbox item 20260925-215108-n8yd-verify-12-seat-bootstrap-wave-pa.json).\n- GCE_ORG\\02_COUNCILS\\01_Executive_Council\\Operations\\06_HANDOFFS\\Coda\\GCE_ROOKIE_DEVPAD_STRUCTURE_BUILD_RETURN_20260925_NICO_TO_CODA_001.md.\n- GCE_SESSION_FRAME_V3_CURRENT_2026-09-25 (Drive doc, 'Status: CURRENT / CANONICAL', effective 2026-09-25, replaces the prior separate session documents).\n- GCE_LIVING_PROMPT_BOOTSTRAP_ENVIRONMENT_SESSION_HEADER_GATE; GCE_TO_EDGE_CREW_PROJECT_RECON_HANDOFF_2026-09-21; GCE_FRAMEWORK_ANCHOR_2026-09-02_COUNCILS_KIMI_GLM_FLOW; GCE_SESSION_BOOK_2026-09-03_DISNEY_TEST_BOOTSTRAP_POC; EC8_Runtime_Design_Grok_v1.0.\n- Machine surfaces named: GCE_DON\\command-center\\cable-car\\transport\\realDriveClient.js (authenticated OAuth Drive client, direct export by Drive ID); cc_rookie_verify.js; acceptance.js; GCE_SEAT_ROUTER.md; seat_registry.json; routing_state.json.\n- Drive root for the Rookie DevPad: My Drive / GCE / 03_PROJECTS / GCE_Stack / Rookie_DevPad = 1h6Tqwm4XR9NlH66MbB5SbhRd1u1q295M.\n- Rookie DevPad file set: per seat ROOKIE_IDENTITY.md, BOOTSTRAP_ROOKIE.md, OCCUPANT_STATE.md (12 seats = 36 files) plus 3 in 00_CURRENT and 3 in 03_REGISTRY.\n- Bootstrap wave output: 12 files, one per GCE_IDENTITY\\<Seat>\\AGENTS.md.",
+      "open_items": "- Falcon defect D-1 unresolved: a Falcon-only correction package plus a Falcon-only verification was recommended, and the main bootstrap wave was to be closed after it. No completion is shown.\n- Three Nico report-integrity defects (hardcoded acceptance checks, byte accounting, 'zero deletions') were to be logged as framework tooling defects; no fix is shown.\n- Rookie DevPad awaits Coda governance sign-off on four specific checks, and 'runtime wiring not started' was a deliberate hold.\n- The machine capability map is still not deterministic: the recommendation was that every relevant bootstrap carry a Drive capability-resolution block, and that block is not shown as written.\n- Session headers pre-V3 remain un-migrated, and the runtime session artifact's machine home was still missing.\n- The session-controller watcher's input contract was bookmarked and deferred ('let's put a stop point there, and go back to our bootstrap conversation').\n- Clickable-path handoff opening in the TUI was scoped to a one-key 'open handoff' helper instead; not built here.",
+      "current_relevance": "This is the operational spine of the current GCE seat/bootstrap machinery: the 12-seat AGENTS.md wave, the Falcon D-1 defect that is still the one open bootstrap contradiction, the V3 session frame, the Rookie DevPad awaiting Coda sign-off, and the Drive-transport rule that stops sessions from falsely declaring Drive unavailable. A human doing framework reconciliation should read this before touching seat bootstraps or session frames.",
+      "authority_warning": "Runs 2026-09-23 to 2026-09-25/26 and straddles the 2026-09-25 GCE seat freeze, so nothing asserted here proves current authority. The roster it operates from includes Ragno as a live seat, which Don orders removed mid-chat - so the seat list inside this conversation is simultaneously treated as authoritative and as wrong. The Falcon D-1 contradiction and the three Nico report-integrity defects are open at the end of the transcript, and the Rookie DevPad structure is explicitly unapproved by Coda. Treat every 'CURRENT / CANONICAL' label inside the chat as a claim made in-conversation, not as verified state.",
+      "candidate_routing": "framework_reconciliation_candidate",
+      "confidence": 0.72
+    },
+    {
+      "conversation_id": "6aaaaf47-58d8-83e8-98c0-2e229409b3fb",
+      "conversation_purpose": "Don handed over four already-hardened MHI Principal Consultant interview-prep documents and asked for better flow and organization in new versions - 'almost better as a flow chart and less cluttered'. The chat's whole job was to rebuild those four dense reference sheets as four flow-first DOCX editions without changing the underlying methodology, then close out under a read-only recap prompt.",
+      "key_outcomes": "- Four source documents were read and their shared logic identified: one constant spine (Handoff -> Sanity Check/Plan -> Design -> Build -> Test -> Deploy -> Stabilize) with loops that add only the depth the interviewer asks for.\n- Four replacements generated and delivered: MHI_Principal_Consultant_Lifecycle_Command_Center_FLOW_v2.docx, MHI_Principal_Consultant_Interview_Loops_Map_FLOW_v2.docx, MHI_SuiteSuccess_NetSuite_Mapping_Compass_FLOW_v2.docx, MHI_Principal_Consultant_Vertical_Casebook_FLOW_v2.docx.\n- Each document was made to answer one question visually: Command Center = the end-to-end flight path with detail underneath; Loops Map = Seat -> Spine -> choose depth -> Zoom Out, with Loops 2-6 as branches rather than a recital order; Mapping Compass = Sold solution/SuiteSuccess -> workstreams -> Plan -> Design -> Build -> pressure-test -> govern change, with the workstream map visually subordinate; Vertical Casebook = the same five-step rhythm per vertical (Operating Model -> Dominant Workstreams -> Discovery -> Zinger -> Zoom Out).\n- The stated design intent was subtractive: 'I also deliberately removed a lot of repeated prose. The idea is visual recall and conversational navigation, not trying to make each page carry every possible answer.'\n- Suggested next refinement, not started: tighten the four into one consistent visual system so a glance at any of them reads the same way.\n- Closed under Don's READ-ONLY closeout prompt, which recorded PRIMARY DOMAIN: Job Search, CURRENT STATUS: HANDOFF REQUIRED, and that no methodology redesign, no canon declaration, no Drive work, and no project/framework architecture change occurred.",
+      "important_facts": "- The underlying methodology was preserved, not changed: 'the lifecycle still runs Handoff -> Sanity Check/Plan -> Design -> Build -> Test -> Deploy -> Stabilize, and the other artifacts now sit around that spine instead of competing with it.'\n- The original 'HARDENED' inputs already encoded the loop model and the vertical five-step rhythm; the change was presentation only.\n- Recap metadata: substance dated 2026-09-16, closeout 2026-09-23, first and last material date both 2026-09-16, authority Don, confidence 99% on the recap itself.\n- Status HANDOFF REQUIRED means the four FLOW v2 files were created but not approved by Don, and the closeout explicitly flagged review as still needed while distinguishing created artifacts from approved status.\n- Nothing in this chat is GCE Framework doctrine; the closeout states Framework impact: none.",
+      "artifacts": "- Inputs: MHI Principal Consultant Vertical Casebook - HARDENED; MHI SuiteSuccess / NetSuite Mapping Compass - HARDENED; MHI Principal Consultant Lifecycle Command Center - HARDENED; MHI Principal Consultant Interview Loops Map - HARDENED.\n- Outputs (all four in the sandbox at /mnt/data/): MHI_Principal_Consultant_Lifecycle_Command_Center_FLOW_v2.docx, MHI_Principal_Consultant_Interview_Loops_Map_FLOW_v2.docx, MHI_SuiteSuccess_NetSuite_Mapping_Compass_FLOW_v2.docx, MHI_Principal_Consultant_Vertical_Casebook_FLOW_v2.docx.\n- Also referenced: GCE UNIVERSAL CHAT CLOSEOUT / RECAP template (Authority Don, Mode READ-ONLY RECONCILIATION) as the closeout harness.\n- Delivery location is the ChatGPT sandbox (/mnt/data), not Google Drive and not the local profile.",
+      "open_items": "- Don's review of the four FLOW v2 first-pass editions is outstanding, hence HANDOFF REQUIRED.\n- The proposed consolidation of the four into one consistent visual system was never started.\n- The files live only in the ChatGPT sandbox; no Drive or local copy was made in this chat.",
+      "current_relevance": "Low for GCE. It matters only as an employment-lane artifact for the Myers-Holum Principal Consultant pursuit - the four FLOW v2 documents are the interview-prep deliverables and their current location and approval state are unverified. The one transferable idea is the subtractive 'one spine, loops add depth, visual recall over completeness' document pattern.",
+      "authority_warning": "Dated 2026-09-16 with a 2026-09-23 closeout, so the job-search context, the four source documents and the interview methodology are all time-sensitive and may be stale. Status is HANDOFF REQUIRED, not approved: the recap itself distinguishes 'created artifacts' from 'approved status' and flags review as still needed. The deliverables exist only in a ChatGPT /mnt/data sandbox whose persistence is unproven, so treat the artifact references as pointers, not as files that can be assumed to still exist. Nothing in this chat is Framework canon.",
+      "candidate_routing": "archive_only",
+      "confidence": 0.74
+    }
+  ]
+}

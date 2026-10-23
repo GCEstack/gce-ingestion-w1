@@ -1,0 +1,225 @@
+{
+  "schema": "gce.chatgpt.worker_output.v1",
+  "worker": "w-batch-01",
+  "workstream": "batch-01",
+  "conversation_ids": [
+    "6ab45849-8430-83e8-bfce-3696208c5e67",
+    "6aa32d59-d38c-83e8-9081-d91f4210022c",
+    "6ab5e48d-bfe4-83e8-b0c6-80265e945d28",
+    "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+    "6ab61052-2db0-83e8-8c47-53f954b8d2a5"
+  ],
+  "classifications": [
+    {
+      "conversation_id": "6ab45849-8430-83e8-bfce-3696208c5e67",
+      "primary_project": "cross-project",
+      "secondary_projects": [
+        "GCE Stack",
+        "DevPad",
+        "GCE Framework (seat doctrine touched, not the subject)"
+      ],
+      "workstream": [
+        "troubleshooting",
+        "recon",
+        "implementation",
+        "planning",
+        "handoff",
+        "operations"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "implementation_truth",
+        "artifact_reference",
+        "accepted_decision",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "lifecycle_state is unknown: the chat declares a Bedrock baseline COMPLETE as of 2026-09-23, but the final 2026-09-25 exchange is an unexecuted Amazon DevPad build brief, so it cannot be proven from the conversation whether either item is still live",
+        "internal tension over how many Bedrock Mantle models are 'VERIFIED TERMINAL' (see needs_reconciliation)"
+      ],
+      "confidence": 0.72,
+      "basis": "Head turn 3 scopes the lane: 'We can use this lane specifically for Bedrock runtime usage, model selection, token/cost utilization, quotas, throughput, routing, and GCE workload allocation - separate from broader GCE Stack architecture'. The bulk of the conversation is a Luce Truth Tower read-only verification ('BEDROCK OPERATIONAL: PARTIAL - Mantle path FULLY OPERATIONAL; Classic runtime BLOCKED') followed by a Nico wiring prompt into 'GCE Terminal / OpenCode'. Tail turn ~192 freezes a baseline: 'provider aws-bedrock-mantle; region us-east-2; base URL https://bedrock-mantle.us-east-2.api.aws/v1; auth via AWS_BEARER_TOKEN_BEDROCK ... verified terminal models moonshotai.kimi-k2.5 and zai.glm-4.7-flash ... Mission status COMPLETE', with follow-ups (1) trace the AWS_BEARER_TOKEN_BEDROCK injection chain, (2) replace conservative 128k/8192 metadata. The last user turn then uploads a 554-line handoff titled 'GCE STACK - AMAZON BEDROCK MANTLE DEVPAD BUILD HANDOFF' with target 'BUILD A THIRD INDEPENDENT DEVPAD', and the final assistant turns declare it 'build-ready' and append a 'FROZEN INITIAL AMAZON DEVPAD OCCUPANTS' block. Project content therefore spans GCE Stack terminal continuity AND DevPad surfaces, hence cross-project.",
+      "basis_spans": "turns 1-12 (lane scoping, Truth Tower prompt), longest middle turns (Luce ground truth, Nico Mantle wiring prompt, Nico hardening prompt, Nova quota table), tail turns ~184-199 (baseline freeze, Amazon DevPad handoff, frozen occupant map)",
+      "needs_reconciliation": true,
+      "conflict_detail": "Two things in the conversation do not line up, and are reported rather than resolved. (1) Model verification status: the frozen baseline lists exactly two 'verified terminal models' (moonshotai.kimi-k2.5, zai.glm-4.7-flash), and an earlier turn notes that Kimi K2.5 / DeepSeek V3.2 / GLM 5 merely 'have Mantle support' - yet the appended Amazon DevPad occupant map labels zai.glm-5, moonshotai.kimi-k2-thinking, deepseek.v3.2, qwen.qwen3-coder-480b-a35b-instruct, zai.glm-4.7, qwen.qwen3-coder-next and minimax.minimax-m2.5 all as 'STATUS: VERIFIED TERMINAL'. Support, registered, and verified-terminal are being used interchangeably. (2) Seat roster: the 2026-09-25 handoff board enumerates a 10-seat structure (Coda, Chiave, Vittorio, Luce, VoiceBridge, Nico, Talon, Keel, Falcon, Corrado) with duplicated ordinal numbering ('1 Coda', '1 Chiave'), which does not match the 12-seat roster in the current seat registry (no Magpie / Pigeon / Raven). Both are flagged for a human to reconcile; this pipeline does not decide either."
+    },
+    {
+      "conversation_id": "6aa32d59-d38c-83e8-9081-d91f4210022c",
+      "primary_project": "Finance",
+      "secondary_projects": [
+        "Personal Admin"
+      ],
+      "workstream": [
+        "troubleshooting",
+        "operations",
+        "decision_making"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "reusable_process",
+        "unresolved_blocker"
+      ],
+      "framework_candidate": false,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "lifecycle_state is unknown: the conversation ends with the money-recovery mechanics confirmed but the Albert cancellation, the $17 withdrawal and the $19.99 dispute all still unexecuted and unverifiable from the record"
+      ],
+      "confidence": 0.78,
+      "basis": "The chat is a single personal-finance thread about closing an Albert savings account. Turn 1: 'Cancel Albert today and verify there are no additional or pending charges.' The user then establishes that the bank already debited twice - 'on the 21st it took the 11 bucks. On the 23rd it took the 6 bucks. Two separate transactions, $17 total' - while Albert's app still showed the 9/17 $11 Auto Save as 'IN PROGRESS'. Blocking facts: 'I can't cancel it' and 'I gotta try to file a dispute for the 19.99 that they charged me when I wanted to cancel.' The final turns replace assumption with sourced mechanics: 'Albert explicitly says Savings funds cannot be withdrawn while the deposit is still in progress', between-product transfers 'available immediately in most cases', and a Cash-to-SoFi 'Direct Transfer' 'typically completes within minutes' at a $4.99 fee, $10 minimum, up to $500 daily.",
+      "basis_spans": "all 38 turns (turn 1 reminder; turns 2-9 diagnosis of the $11/$6 debits and Auto Save shutoff; middle turns on the $19.99 dispute path; tail turns 30-38 on instant-transfer mechanics and the $4.99 fee caveat)",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    },
+    {
+      "conversation_id": "6ab5e48d-bfe4-83e8-b0c6-80265e945d28",
+      "primary_project": "Finance",
+      "secondary_projects": [
+        "Personal Admin"
+      ],
+      "workstream": [
+        "research"
+      ],
+      "lifecycle_state": "completed",
+      "durable_value": [
+        "low_value_chatter"
+      ],
+      "framework_candidate": false,
+      "human_review_required": false,
+      "human_review_reasons": [],
+      "confidence": 0.72,
+      "basis": "Ten turns, one user question: 'There's apps like Earning and Bridget. What other good ones are there?' The assistant interprets this as cash-advance / paycheck-advance apps and returns a cited 2026 comparison list (Dave, MoneyLion Instacash up to ~$500, Klover, Cleo $20-$250 with $4.49-$14.99 same-day, Current, Chime MyPay/SpotMe, Tilt up to ~$500 with $8/month, Albert), a suggested test order, and the caveat that 'approval amounts are very account-specific'. There is no GCE, project, build, or framework content anywhere in the thread and no follow-up turn, so the question that the chat existed to answer was answered.",
+      "basis_spans": "all 10 turns (single user question, one substantive assistant answer)",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    },
+    {
+      "conversation_id": "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+      "primary_project": "cross-project",
+      "secondary_projects": [
+        "Travel",
+        "Employment"
+      ],
+      "workstream": [
+        "research",
+        "decision_making",
+        "planning"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "artifact_reference",
+        "reusable_process"
+      ],
+      "framework_candidate": false,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "lifecycle_state is unknown: fares were researched but no booking or decision is recorded in the conversation, and it cannot be proven from the record whether the Oct 7 itinerary or the travel-reimbursement dispute was resolved"
+      ],
+      "confidence": 0.7,
+      "basis": "The chat serves two purposes that overlap. Purpose one, travel: turn 1 'Let's keep this chat as basically getting back to Florida for interviews ... from Las Vegas to either Tampa, Orlando, or even Miami or Fort Lauderdale. Whatever's cheapest, one fucking way', executed through ~120 Expedia tool calls comparing LAS to TPA/MCO/MIA/FLL, converging on 'LAS -> JAX nonstop Breeze: $154' plus 'JAX -> Orlando bus: ~$20-$30' for 'Total: ~$174-$184 before airline baggage' on Oct 7. Purpose two, employment: the tail turns pivot to a dispute with recruiter Tony / James Scott over who pays a ~$200 one-way flight, citing Tony's email 'If I recall, didn't you tell ATEX you were going to be in town on these dates?' against the original recruiting premise that 'the company will help Don relocate', plus an RF Smart lane that may cover the travel. Because a personal travel search and a job-search reimbursement dispute are materially intertwined, primary_project is cross-project.",
+      "basis_spans": "turns 1-12 (lane scoping, four Expedia search_flights calls for TPA/MCO/MIA/FLL), longest middle turns (raw Frontier/Breeze one-way fare payloads for 2026-09-26 through 2026-09-28), tail turns ~279-290 (JAX-plus-bus fallback, RF Smart, the Tony/relocation framing)",
+      "needs_reconciliation": false,
+      "conflict_detail": ""
+    },
+    {
+      "conversation_id": "6ab61052-2db0-83e8-8c47-53f954b8d2a5",
+      "primary_project": "GCE Framework",
+      "secondary_projects": [
+        "Cable Car (one of the four postmortem subjects)",
+        "DevPad (one of the four postmortem subjects)",
+        "Fantasy Sports / MLB data (one of the four postmortem subjects)",
+        "EC8 Edge Crew (one of the four postmortem subjects)"
+      ],
+      "workstream": [
+        "governance",
+        "research",
+        "documentation",
+        "historical_archive"
+      ],
+      "lifecycle_state": "unknown",
+      "durable_value": [
+        "historical_provenance",
+        "unresolved_blocker",
+        "reusable_process",
+        "accepted_decision"
+      ],
+      "framework_candidate": true,
+      "human_review_required": true,
+      "human_review_reasons": [
+        "lifecycle_state is unknown: the session header says 'STATUS: OPEN' and the thread ends mid-task with a failed thread fetch ('I'm having trouble fetching that thread'), so it cannot be proven whether the parent recon was ever completed, closed, or deliberately dropped",
+        "framework_candidate material contains seat and lifecycle assertions that appear to predate or conflict with the 2026-09-25 seat freeze and need a human to reconcile",
+        "the last several turns are voice-mode with no extractable text, so the ending of the session is not fully recoverable from this record"
+      ],
+      "confidence": 0.78,
+      "basis": "Turn 1 is a written session header: 'GCE FRAMEWORK - CROSS-SESSION LOOP RECON SESSION HEADER', 'AUTHORITY: Don / PRIMARY SEAT: Coda', 'MODE: FRAMEWORK RECON / READ-ONLY / CROSS-SESSION POSTMORTEM', 'STATUS: OPEN', 'CANON AUTHORITY: NONE', 'WRITE AUTHORITY: NONE', with the mission 'Reconstruct what happened across four GCE work sessions that entered, or may have entered, the same loop / frame-drift condition' and 'THIS SESSION DOES NOT BUILD OR FIX THE UNDERLYING PROJECTS.' It carries seat doctrine in the chat itself ('GCE operates identity-first and seat-first'; Coda/Vittorio/Chiave/Nico/Luce role boundaries; 'The operating identity of a seat is distinct from the underlying model, provider, runtime, or terminal implementation'). The middle turns are four multi-thousand-line 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' documents covering Drive/Cable Car (CABLE_CAR_RECON.md, cli/index.js, transport/driveInbound.js, recovery.js), DevPad canonical Model Synthesis (mlb_ecq_synthesis_v1.ts), MLB data cleanup, and Edge Crew. The assistant itself flags uneven evidence: 'the four chats did not all fail in the same way ... Cable Car is presently the thinnest evidentiary record, so I'm not going to manufacture symmetry.' The session then visibly breaks: 'Stop. I'm Giving u the post Mortem ... You're going off the rails and inferring' -> 'Stopped. I won't analyze, infer, reconcile, or act on that prompt.' The tail drifts to voice mode on the 'Session Controller / control-plane problem' and 'fix the bootstraps', with Don saying 'that might be in a different conversation. I'm sorry' and the last assistant turn reporting 'I'm having trouble fetching that thread.'",
+      "basis_spans": "turn 1 (session header and seat doctrine), turns 10-12 (premature synthesis plus Don's stop), longest middle turns (four postmortem documents and the files.search handoff snippets), tail turns ~220-231 (voice-mode drift, bootstrap pivot, failed thread fetch)",
+      "needs_reconciliation": true,
+      "conflict_detail": "The recon's own evidence corpus contains seat and lifecycle assertions that are inconsistent with the current seat state, and they are reported here rather than resolved. A files.search result surfaces the text '- fixed lifecycle requiring Corrado->Chiave->Calibro->Talon->Keel every time.' and '- assumption that 01_Corrado_Kimi must be renamed to match current authority.' and '- assumption that model/provider names should appear in seat identity.' - all three describe a seat set and a model-in-seat-identity practice that the 2026-09-25 freeze retired (Calibro, Kimi) or forbids (MODEL != SEAT). Separately, the four postmortems do not agree on symmetry: the assistant states 'MLB has strong artifact/test evidence; Ground State has a clear terminal-reconciliation thread; Edge Crew has stronger architecture-history than direct loop evidence; Cable Car is presently the thinnest evidentiary record', so a single cross-session failure mechanism is not actually established by this record. A third, softer conflict: the assistant's own premature finding ('the four chats did not all fail in the same way') is exactly the inference Don halted - the session was stopped mid-analysis, so no reconciled position was reached."
+    }
+  ],
+  "summaries": [
+    {
+      "conversation_id": "6ab45849-8430-83e8-bfce-3696208c5e67",
+      "conversation_purpose": "Establish Amazon Bedrock as a usable GCE continuity/compute layer after the user's other model-provider credits ran out, verify the real ground truth about what is actually callable, wire the working Bedrock Mantle path into the GCE terminal/OpenCode, and finally scope a third DevPad surface (Amazon DevPad) that would run the same seats on Bedrock-hosted models.",
+      "key_outcomes": "- Bedrock Mantle path verified operational via a read-only Luce Truth Tower pass; classic Bedrock Runtime / Nova was BLOCKED (quota-gated, several Nova quotas reported at 0.0 and non-adjustable)\n- Nico handed a bounded, reversible wiring brief for the Bedrock Mantle path into the GCE terminal/orchestrator, then a hardening/correction brief for the already-working integration\n- A baseline was declared frozen on 2026-09-23: provider aws-bedrock-mantle, region us-east-2, base URL https://bedrock-mantle.us-east-2.api.aws/v1, auth via AWS_BEARER_TOKEN_BEDROCK resolved through provider.env, verified terminal models moonshotai.kimi-k2.5 and zai.glm-4.7-flash, local file access working, fresh-process verification working, rollback documented; 'Mission status COMPLETE'\n- A 554-line 'Amazon Bedrock Mantle DevPad Build Handoff' was uploaded and assessed as build-ready, with a 'FROZEN INITIAL AMAZON DEVPAD OCCUPANTS' model-to-seat map appended so the builder would not re-decide assignments\n- Seat doctrine restated in the handoff: IDENTITY != MODEL, MODEL != SEAT, PROVIDER != SEAT, RUNTIME != SEAT, with seat identity/authority/bootstrap stable regardless of occupant model",
+      "important_facts": "- DeepSeek V3.2 is specifically available in us-east-2; Kimi K2.5, DeepSeek V3.2 and GLM 5 have Bedrock Mantle support per AWS docs surfaced in the chat\n- Bedrock bills input tokens, output tokens, cache reads and cache writes as separate dimensions, so remaining runway is not derivable from call count alone\n- Classic Bedrock Runtime / Amazon Nova was deliberately DEFERRED rather than worked, due to quota gating\n- The chat's own opening self-declaration ('Status: ACTIVE - Confidence: 100%') is a claim about the chat lane, not evidence that any underlying work is currently live\n- Files touched by the wiring discussion: .config/opencode/opencode.json, tui.json, .cache/opencode/models.json, .local/share/opencode/auth.json, .local/state/opencode/model.json",
+      "artifacts": "- Luce Truth Tower verification prompt and its ground-truth return (SESSION ID 20260923-LUCE-1)\n- 'NICO - AMAZON BEDROCK MANTLE TERMINAL INTEGRATION' prompt (2026-09-23, mode READ-FIRST -> MINIMAL REVERSIBLE CONFIGURATION -> LIVE VERIFICATION)\n- 'NICO - BEDROCK MANTLE HARDENING / CORRECTION PASS' prompt\n- 'GCE STACK - AMAZON BEDROCK MANTLE DEVPAD BUILD HANDOFF' (554 lines), targeting a third independent DevPad on port 4729\n- 'FROZEN INITIAL AMAZON DEVPAD OCCUPANTS' occupant map (Coda, Chiave, Vittorio, Luce, Nico, Talon, Keel, Falcon, Corrado assigned to Bedrock models; VoiceBridge kept as SERVICE CONTROL)\n- Existing DevPad surfaces referenced: MAIN DEVPAD http://localhost:4727, ROOKIE DEVPAD http://localhost:4728, proposed Amazon DevPad http://localhost:4729",
+      "open_items": "- Trace and document the durable environment-loader chain that injects AWS_BEARER_TOKEN_BEDROCK\n- Replace the conservative 128k context / 8192 output metadata with authoritative per-model verified limits\n- Classic Bedrock Runtime / Nova remains deferred behind quota gating\n- No evidence in this record that the Amazon DevPad (port 4729) was ever built, started, or verified - the handoff was only assessed and appended to",
+      "current_relevance": "If Bedrock is still standing in as the GCE continuity provider, or if an Amazon DevPad surface is still queued, this is the thread that records what was proven and what the frozen parameters were. I cannot tell from this conversation whether any of it is still live.",
+      "authority_warning": "Currency unproven, and the word COMPLETE is scoped narrowly: the baseline freeze is dated 2026-09-23 and the last activity 2026-09-25, but the record ends before the final build was executed, so 'Mission status COMPLETE' applies to the Bedrock terminal bridge only and must not be read as 'Amazon DevPad exists'. Two items need human reconciliation and must not be promoted from this pipeline: (1) 'VERIFIED TERMINAL' is applied to eight-plus Bedrock models in the occupant map while the frozen baseline names only two verified terminal models and the rest were only known to be Mantle-supported; (2) the handoff's 10-seat board does not match the current 12-seat registry roster (Magpie, Pigeon, Raven absent) and has duplicated ordinal numbering.",
+      "candidate_routing": "project_handoff_candidate",
+      "confidence": 0.72
+    },
+    {
+      "conversation_id": "6aa32d59-d38c-83e8-9081-d91f4210022c",
+      "conversation_purpose": "Get an Albert savings account closed without losing money: recover two Auto Save transfers the bank had already debited, stop further Auto Save pulls, and dispute a $19.99 charge taken at the moment of a failed cancellation - with a specific need to know whether the money could reach a linked SoFi card fast enough to cover a hotel the following day.",
+      "key_outcomes": "- Auto Save was turned off by the user, stopping the recurring pull ('Yeah, I turned that auto-save off')\n- The true exposure was corrected from $11 to $17: the bank debited $11 on 9/21 and $6 on 9/23, while Albert's app still showed only the 9/17 $11 Auto Save as 'Processing'\n- The two problems were separated: the $11/$6 are recognized Auto Save transfers that should settle and be recoverable, and the $19.99 is the charge to challenge; the assistant advised not disputing the $11/$6 as unauthorized\n- After the user pushed back on assumption, the mechanics were verified from Albert's own documentation: Savings cannot be withdrawn while a deposit is in progress; between-product transfers (Savings -> Cash) are normally immediate; Cash -> linked debit card via 'Direct Transfer' typically completes within minutes, fee $4.99, $10 minimum, up to $500 daily\n- End state agreed: '$17 settles -> Savings -> Albert Cash -> instant/direct transfer -> SoFi', with the $4.99 fee flagged as making a $11 rescue expensive, and the $11 treated as potential same-day hotel liquidity only if it clears",
+      "important_facts": "- Albert showed 'Albert Savings: $17.00' in the balance while the individual $11 transaction screen still read 'In Progress' - displayed total balance is not settled/available funds\n- Albert's stated Auto Save settlement window was 5-6 business days from 9/17, implying 9/24-9/25, but the bank-side debit on 9/21 made that status stale or misleading\n- The $19.99 was charged at the moment the user tried to cancel, and Albert's in-app cancel was blocked ('I can't cancel it')\n- Recommended cancellation sequence: $17 settles -> withdraw $17 -> confirm $0 balance and no pending transfers -> cancel Albert -> verify no further debits -> pursue/finish the $19.99 dispute",
+      "artifacts": "- Albert app screenshots showing the 9/17 $11 Auto Save 'IN PROGRESS' state, the Albert Savings $17.00 balance, and the transfer/withdraw screen (image attachments in the chat)",
+      "open_items": "- Wait for the $11 transfer to flip to Completed, then move it to Albert Cash and decide whether a $4.99 direct transfer is worth it for hotel liquidity\n- Withdraw the $17 before cancelling, since Albert cannot be cancelled while the transfer is pending
+- File and finish the $19.99 dispute with Albert, escalating to the card issuer if unresolved; cancellation-attempt screenshots should be preserved
+- Confirm no subsequent Albert debits after cancellation",
+      "current_relevance": "unknown - this is a personal banking thread with a short dated window (Sept 17-25) and I have no evidence of how any of it ended. Relevant to Don only as a personal-admin record of money owed and a dispute still open.",
+      "authority_warning": "All operational detail is as of 2026-09-25 and Albert's fee/limit figures are vendor documentation read at that moment, so they may have changed. The conversation ends with the plan agreed and nothing verified as done: I cannot claim the account was cancelled, the $17 recovered, or the $19.99 dispute filed. Nothing here is a current-state fact.",
+      "candidate_routing": "archive_only",
+      "confidence": 0.78
+    },
+    {
+      "conversation_id": "6ab5e48d-bfe4-83e8-b0c6-80265e945d28",
+      "conversation_purpose": "A single consumer-finance question: the user named two cash-advance apps he already knows (EarnIn, Brigit, transcribed as 'Earning' and 'Bridget') and asked what other good options exist, with an implied goal of bridging a small short-term amount.",
+      "key_outcomes": "- Named the main alternatives: Dave (ExtraCash), MoneyLion Instacash, Klover, Cleo, Current, Chime MyPay/SpotMe, Albert, and Tilt (formerly Empower)\n- Gave indicative ceilings and fees: MoneyLion up to about $500 with no mandatory monthly subscription for standard delivery; Cleo $20-$250 on Plus/Pro with $4.49-$14.99 same-day delivery; Tilt up to about $500 but $8/month after trial; Klover smaller advances; Current/Chime tied to their banking product and direct-deposit requirements\n- Recommended testing order rather than subscribing widely: MoneyLion -> Dave -> Klover -> Cleo -> Current/Chime\n- Flagged that approval amounts are highly account-specific (deposit history, checking balance patterns, repayment behavior)",
+      "important_facts": "- The assistant inferred the need was a roughly $50-$300 short bridge and offered to narrow to 2-3 realistic options once told the amount and whether direct deposit exists; the user never replied, so that narrowing never happened",
+      "artifacts": "- Cites to a NerdWallet 2026 comparison of cash-advance apps and to individual vendor pages for MoneyLion, Cleo and Tilt figures",
+      "open_items": "- The assistant's closing question (how much to bridge, and is there direct deposit) was never answered, so no shortlist was ever produced",
+      "current_relevance": "unknown - a one-shot consumer recommendation with no project, build, or governance content. Its only value is as a snapshot of which cash-advance apps existed in 2026 and at what fee structure.",
+      "authority_warning": "Fee structures, advance ceilings and app availability are vendor facts captured at one moment and go stale quickly; treat the list as a dated snapshot, not a current comparison. No GCE, project, or framework content in this thread.",
+      "candidate_routing": "duplicate_or_low_value",
+      "confidence": 0.72
+    },
+    {
+      "conversation_id": "6ab6d270-f25c-83e8-add8-9d4650bddb9b",
+      "conversation_purpose": "Two intertwined goals: (1) find the cheapest realistic one-way flight from Las Vegas to a Florida gateway for a job-interview trip if the user has to self-fund it, and (2) pressure-test the position that the employer, via recruiter Tony at James Scott Group, should carry that travel cost under the relocation premise.",
+      "key_outcomes": "- Roughly 120 Expedia search calls compared LAS to TPA, MCO, MIA and FLL across 2026-09-26 through 2026-09-28, optimizing for lowest real out-of-pocket fare on a one-way\n- The winning path moved outside the original gateway set: a $154 Breeze nonstop LAS -> JAX on Oct 7, plus a ~$20-$30 Jacksonville -> Orlando bus (Greyhound/FlixBus, ~8 buses/day, 8:45 AM to 11:15 PM, aggregator floor about $18)\n- Stated total: '~$174-$184 before airline baggage' - the point of the exercise was that the user now knows he is not trapped and does not have to buy a $350-$500 emergency ticket\n- Ground lane split into three: RF Smart may fly him in; self-funded fallback is the Oct 7 LAS->JAX itinerary; Tony / James Scott is explicitly out of the operating plan until he returns with concrete terms\n- Framed the recruiter issue: 'you're not demanding that Tony personally approve an expense. You're expecting the recruiter who sold the opportunity partly on relocation assistance to go back to the client, define the relocation package, and give you a clean answer', and named the three things Tony must pin down with ATEX (what relocation assistance means, whether interview/transition travel is covered separately, and who fronts vs books the cost)",
+      "important_facts": "- Tony's email substance, retrieved from a prior thread: 'If I recall, didn't you tell ATEX you were going to be in town on these dates? ... they may give some pushback if they thought you were already going to be there' - the assistant notes the original representation was 'Florida', not 'already in Orlando'\n- The recruiting premise included 'the company will help Don relocate', but per the chat the relocation structure 'apparently was not yet reduced to a written offer'\n- The user states the process is effectively decided: 'We're not, like, in the first round. We are literally going to tour the fucking office. Like, the deal is done.'\n- The cheapest itineraries found were Frontier (F9) with 1 stop via ATL, DEN or IAH; several results showed seats_left: 0",
+      "artifacts": "- 112 Expedia fare-search results and links for one-way LAS->TPA/MCO/MIA/FLL, 2026-09-26 through 2026-09-28\n- Greyhound/FlixBus and aggregator fare references for Jacksonville -> Orlando on October 7\n- A memory citation back to the prior Tony / James Scott job-search thread for the relocation and pushback emails",
+      "open_items": "- No booking was made in this record; whether the $154 Oct 7 fare survived or was ever ticketed is unknown\n- The same-night connection was explicitly not verified: the JAX arrival is around 8:02 PM and the bus schedule runs as late as ~11:15 PM, but the assistant flagged that 'We'd need to verify the actual October 7 departure/stop logistics before counting on a same-night connection'\n- The ATEX relocation-package question is unanswered; the user is not talking to Tony pending RF Smart's response\n- No exact 'I need to be there by' date was ever given to tighten the search",
+      "current_relevance": "unknown from the record. If the Florida interview trip is still ahead, the fallback itinerary and the recruiter framing are both directly useful; if the trip happened or was RF Smart-funded, this is a closed episode. I cannot tell which.",
+      "authority_warning": "Every fare figure is a 2026-09-25 quote for a specific date and is volatile; none of it should be read as a current price. The employment-side content is the assistant's reconstruction of a prior thread plus the user's own account of recruiter email exchanges - the actual ATEX relocation terms are unverified and unwritten in this record. Predates the 2026-09-25 seat freeze, no GCE doctrine is asserted or changed here, currency unproven.",
+      "candidate_routing": "archive_only",
+      "confidence": 0.7
+    },
+    {
+      "conversation_id": "6ab61052-2db0-83e8-8c47-53f954b8d2a5",
+      "conversation_purpose": "A read-only forensic reconciliation, under Don's authority with Coda as primary seat, of four separate GCE work sessions that entered or may have entered a common 'loop / frame drift' condition - establishing what happened, what remains valid, where each session diverged, and what control would have interrupted the pattern. It explicitly does not build, fix, or change canon.",
+      "key_outcomes": "- The assistant began session-by-session reconstruction from underlying records and immediately refused to manufacture symmetry: 'the four chats did not all fail in the same way. MLB has strong artifact/test evidence; Ground State has a clear terminal-reconciliation thread; Edge Crew has stronger architecture-history than direct loop evidence; Cable Car is presently the thinnest evidentiary record'\n- Don halted the analysis mid-flight: 'Stop. I'm Giving u the post Mortem ... You're going off the rails and inferring. You're making these prompts too long, even this one. What the fuck? Don't do anything.' The assistant complied - 'Stopped. I won't analyze, infer, reconcile, or act on that prompt.'\n- Four 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON' documents were then ingested as evidence, each scoped to one chat: Drive cleanup + Cable Car architecture, DevPad canonical Model Synthesis, MLB data cleanup from the old version, and Edge Crew\n- The session then drifted off-mission: a voice-mode pass surfaced the Session Controller / control-plane problem as 'the big unresolved framework item', and Don pivoted to 'Right now, I want to fix the bootstraps' and then 'that might be in a different conversation. I'm sorry'\n- The thread ends on a failed fetch: 'I'm having trouble fetching that thread. We can either go from memory or-'",
+      "important_facts": "- The session header fixed the authority limits: 'BUILD AUTHORITY: NONE / CANON AUTHORITY: NONE / WRITE AUTHORITY: NONE', mode 'FRAMEWORK RECON / READ-ONLY / CROSS-SESSION POSTMORTEM', 'STATUS: OPEN'\n- On 2026-09-24 Don identified a repeated operating failure across multiple otherwise separate GCE sessions, the pattern involving loss of explicit framing among other symptoms\n- The chat records seat boundaries as live doctrine: identity-first/seat-first; Coda is governance/reconciliation and does not become implementation; Vittorio tests premises and does not become the builder; Chiave is invoked when architecture is materially required and 'Architecture is not automatically required because uncertainty exists'; Nico is the builder and owns design-to-build translation; Luce verifies and 'Does not automatically turn every discrepancy into a new build cycle'; 'The operating identity of a seat is distinct from the underlying model, provider, runtime, or terminal implementation'\n- The DevPad postmortem's own finding was that the session 'produced substantial valid software, but later entered a process/architecture loop around canonical Model Synthesis integration'\n- The Drive/Cable Car chat contained two sequential workstreams: Google Drive cleanup/reconciliation first, then Cable Car architecture/build",
+      "artifacts": "- Four postmortem documents of 1148, 964, 772 and one further multi-hundred-line file, all titled 'GCE SESSION POSTMORTEM - LOOP / FRAME DRIFT RECON'\n- CABLE_CAR_RECON.md; cli/index.js; transport/driveInbound.js; transport/localDelivery.js; workers/recovery.js; recovery.js; localDelivery.js; driveInbound.js\n- mlb_ecq_synthesis_v1.ts; tsconfig.node.ts\n- Pasted text(20260923-220026).txt and Pasted text(3).txt - prior handoff/cleanup material pulled in via files.search\n- Related handoff corpus referenced: GCE_FRAMEWORK_HANDOFF_2026-09-18.docx, GCE_FRAMEWORK_HANDOFF_NEW_CHAT_2026-09-20.docx, ACTION_ITEMS.md, CHECKPOINT.md, CONVERSATION_QUEUE.md, ARCHITECTURE-COMMAND-CENTER-PANES.md, EDGE_CREW_DEVPAD.md, 20260914-TALON-G3-endstate-DECISION-REQUEST.md",
+      "open_items": "- No reconciled finding, no written control, and no close-out was produced in this record; the session header still reads STATUS: OPEN\n- The cross-session failure mechanism is not established - the assistant's own assessment says the evidence is uneven and the Cable Car record is thinnest\n- Which control would have interrupted the loop is unanswered\n- The Session Controller / control-plane problem is named as 'the big unresolved framework item' and was not addressed\n- Bootstraps were identified as the thing to fix and immediately deferred to a different conversation\n- The last action was a failed thread fetch, so whatever the session was about to open is unrecoverable here",
+      "current_relevance": "This is the strongest framework-relevant item in the batch: it is a forensic record of a repeated operating failure in GCE sessions, which is exactly the kind of evidence a control-plane or session-controller fix would need. Its value is as provenance and as a list of unresolved items, not as current doctrine.",
+      "authority_warning": "High risk of being read as current truth, so flagging plainly: this is a 2026-09-25 read-only recon that declared no canon, no build, and no write authority, it was halted mid-analysis by Don, and it ended unresolved. Its own evidence corpus contains seat/lifecycle assertions that conflict with the 2026-09-25 freeze - notably 'fixed lifecycle requiring Corrado->Chiave->Calibro->Talon->Keel every time' (Calibro retired), 'assumption that 01_Corrado_Kimi must be renamed' (Kimi retired), and 'assumption that model/provider names should appear in seat identity' (forbidden by MODEL != SEAT). The four postmortems also disagree on symmetry, so no single failure mechanism is proven. Nothing here may be promoted to canon; a human must reconcile it against seat_registry.json and the freeze decisions.",
+      "candidate_routing": "framework_reconciliation_candidate",
+      "confidence": 0.78
+    }
+  ]
+}

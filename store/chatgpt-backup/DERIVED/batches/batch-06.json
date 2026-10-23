@@ -1,0 +1,58 @@
+{
+  "schema": "gce.chatgpt.worker_batch.v1",
+  "batch_id": "batch-06",
+  "conversation_ids": [
+    "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+    "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+    "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+    "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+    "6aaaaf47-58d8-83e8-98c0-2e229409b3fb"
+  ],
+  "conversations": [
+    {
+      "conversation_id": "6ab43fde-6ab4-83e8-946a-3cb584acc69e",
+      "title": "Old_Archive_Chat_Consolidation",
+      "turns": 494,
+      "date": 1790197727.38138,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab43fde-6ab4-83e8-946a-3cb584acc69e.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab43fde-6ab4-83e8-946a-3cb584acc69e.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab60a10-99a8-83e8-84bf-91687a0e42f4",
+      "title": "Own Voice Explanation",
+      "turns": 93,
+      "date": 1790315044.209724,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab60a10-99a8-83e8-84bf-91687a0e42f4.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab60a10-99a8-83e8-84bf-91687a0e42f4.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab5a02d-229c-83e8-a13b-07c0cafd3b25",
+      "title": "Pivot Pete Chat",
+      "turns": 671,
+      "date": 1790287928.953499,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab5a02d-229c-83e8-a13b-07c0cafd3b25.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab5a02d-229c-83e8-a13b-07c0cafd3b25.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6ab459d2-3e18-83e8-af7e-13dec8b4b512",
+      "title": "Reconcile current taxonomy",
+      "turns": 1576,
+      "date": 1790204370.990265,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6ab459d2-3e18-83e8-af7e-13dec8b4b512.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6ab459d2-3e18-83e8-af7e-13dec8b4b512.json",
+      "capture_quality": "unverified"
+    },
+    {
+      "conversation_id": "6aaaaf47-58d8-83e8-98c0-2e229409b3fb",
+      "title": "Reorganize Hardening Artifacts",
+      "turns": 26,
+      "date": 1789570887.894146,
+      "digest_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\digests\\6aaaaf47-58d8-83e8-98c0-2e229409b3fb.md",
+      "normalized_path": "C:\\Users\\Dekan AI Brother\\Projects\\ACTIVE\\gce-ingestion-w1\\store\\chatgpt-backup\\DERIVED\\normalized\\6aaaaf47-58d8-83e8-98c0-2e229409b3fb.json",
+      "capture_quality": "unverified"
+    }
+  ]
+}
